@@ -1179,7 +1179,7 @@ h1{
 
 .list_menu > li a{
 	border-radius: 999rem;
-	background:#2e69e9;
+	background:#e15a83;
 	color: #fff;
     letter-spacing: 2px;
     display: flex;
@@ -1196,7 +1196,7 @@ h1{
 	padding: .8rem 2rem;
 }
 .list_menu > li a:hover, .list_menu > li a:focus, .list_menu > li a:active {
-	background-color: #e15a83;
+	background-color: #396be9;
 	color: white;
 }
 
@@ -2494,3 +2494,44 @@ header
 .list_goods .price {
     margin: auto;     /* 價格永遠靠下 */
 }
+
+/* --- Goods Tabs Buttons --- */
+.goods-tab {
+	width: 100%;
+	max-width: 1200px;
+	margin: 20px auto 0 auto;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: .5rem;
+  }
+
+  .goods-tab li {
+	list-style: none;
+	padding: .6rem 1.2rem;
+	background: #5497e282;
+	color: #fff;
+	border-radius: 999rem;
+	cursor: pointer;
+	transition: .25s;
+	font-size: 1rem;
+  }
+
+  .goods-tab li:hover {
+	background:#2e69e9;
+  }
+
+  .goods-tab li.active {
+	background:#2e69e9;
+  }
+
+  /* --- Tab Content 顯示切換 --- */
+  .goods-tab-content {
+	display: none;
+	width: 100%;
+  }
+
+  .goods-tab-content.active {
+	display: block;
+  }
