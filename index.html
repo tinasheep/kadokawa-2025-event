@@ -2,6 +2,17 @@
 <html lang="zh-Hant">
 
 <head>
+    <style>
+        img[loading="lazy"] {
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        img[loading="lazy"].loaded {
+            opacity: 1;
+        }
+    </style>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,15 +24,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="images/fb_share.jpg" />
     <meta property="og:site_name" content="台灣角川2025年終感謝祭" />
-    <meta property="og:url" content="https://event.kadokawa.com.tw/2025/yearend-festival" />
+    <meta property="og:url" content="https://event.kadokawa.com.tw/2025/winter-festival/" />
 
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" href="css/animate-custom.css" />
     <link rel="stylesheet" type="text/css" href="css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/kadokawa.ico" type="image/x-icon" />
@@ -60,7 +66,7 @@
         <div id="header">
             <div class="header">
                 <div class="header_logo">
-                    <a href="https://www.kadokawa.com.tw" target="_self"><img src="images/k_header_w@2x.png" /></a>
+                    <a href="https://www.kadokawa.com.tw" target="_self"><img loading="lazy" src="images/k_header_w@2x.png" /></a>
                 </div>
                 <div class="header_right">
                     <a id="photo">人氣作品合影牆</a> | <a id="gift">限定贈品四重送</a> |
@@ -76,7 +82,7 @@
         <div id="m_header">
             <div class="m_header">
                 <div class="m_header_logo">
-                    <a href="https://www.kadokawa.com.tw" target="_self"><img src="images/k_header_w@2x.png" class="retina" /></a>
+                    <a href="https://www.kadokawa.com.tw" target="_self"><img loading="lazy" src="images/k_header_w@2x.png" class="retina" /></a>
                 </div>
             </div>
         </div>
@@ -105,47 +111,47 @@
                 <div class="kv-girl"></div>
                 <div class="kv-title"></div>
                 <div class="map-top"></div>
-                <!-- <img src="images/star01.png" class="star star1 wow flash"   data-wow-duration="5s" data-wow-iteration="infinite">
-          <img src="images/star01.png" class="star star2 wow flash"  data-wow-delay=".5s" data-wow-duration="5s" data-wow-iteration="infinite">
-          <img src="images/star03.png" class="star star3 wow flash"  data-wow-delay="1s" data-wow-duration="5s" data-wow-iteration="infinite"> -->
+                <!-- <img loading="lazy" src="images/star01.png" class="star star1 wow flash"   data-wow-duration="5s" data-wow-iteration="infinite">
+          <img loading="lazy" src="images/star01.png" class="star star2 wow flash"  data-wow-delay=".5s" data-wow-duration="5s" data-wow-iteration="infinite">
+          <img loading="lazy" src="images/star03.png" class="star star3 wow flash"  data-wow-delay="1s" data-wow-duration="5s" data-wow-iteration="infinite"> -->
                 <div class="map-img"></div>
             </div>
             <div id="main_out">
                 <div id="main_cont">
-                    <div class="title wow fadeInUp">
-                        <img src="images/title02.png" />
+                    <div class="title">
+                        <img loading="lazy" src="images/title02.png" />
                         <h4>4大超人氣作品紀念合影牆登場！</h4>
                     </div>
-                    <div class="gift wow fadeInUp">
-                        <div class="gift-s wow fadeInUp">
+                    <div class="gift">
+                        <div class="gift-s">
                             <li>
-                                <a href="images/c-4.png"><img src="images/c-4.png" />
+                                <a href="images/c-4.png"><img loading="lazy" src="images/c-4.png" />
                                     <p class="text-center">
-                                        《魔法偵探時崎狂三事件簿》、《魔法偵探時崎狂三回顧錄》
+                                        《魔法偵探時崎狂三事件簿》
                                     </p>
                                 </a>
                             </li>
                             <li>
-                                <a href="images/c-2.png"><img src="images/c-2.png" />
+                                <a href="images/c-2.png"><img loading="lazy" src="images/c-2.png" />
                                     <p class="text-center">《背叛者的情歌》</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="images/c-1.png"><img src="images/c-1.png" />
+                                <a href="images/c-1.png"><img loading="lazy" src="images/c-1.png" />
                                     <p class="text-center">《全知讀者視角》</p>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="images/c-3.png"><img src="images/c-3.png" />
+                                <a href="images/c-3.png"><img loading="lazy" src="images/c-3.png" />
                                     <p class="text-center">《新世界狂歡》</p>
                                 </a>
                             </li>
 
                             <div id="book_out">
                                 <div id="list_cont">
-                                    <div class="title wow fadeInUp" id="booktitle">
-                                        <img src="images/title03-1.png" />
+                                    <div class="title" id="booktitle">
+                                        <img loading="lazy" src="images/title03-1.png" />
                                     </div>
                                     <div class="sale">
                                         <div class="wow fadeInLeft w50" data-wow-delay=".5s">
@@ -164,25 +170,43 @@
                             </div>
 
                             <!-- 超感謝！會場限定贈品4重送  有點開放大-->
-                            <div class="sp-title sp-title2 wow fadeInUp">
-                                <img src="images/title03-2.png" />
+                            <div class="sp-title sp-title2">
+                                <img loading="lazy" src="images/title03-2.png" />
                                 <h4>於會場消費即可獲得限定精美贈品</h4>
                             </div>
-                            <div class="gift-s3 wow fadeInUp">
+                            <div class="gift-s3">
                                 <li>
-                                    <a href="images/gift02-1.png"><img src="images/gift02-1.png" /></a>
-                                    <h1>
-                                        <div class="text-center big">第一重</div>
-                                        消費滿NT$420 即贈行星卡+精緻動漫小禮
-                                    </h1>
-                                    <div class="txt">
-                                        <p>
-                                            ．台灣角川2025年終感謝祭限定「銀河風人物收藏卡」卡包，3款隨機贈送。<br /> ．累計贈送，單筆消費最多可拿10包「銀河風人物收藏卡」。 ．數量有限，送完為止。
-                                        </p>
-                                    </div>
+                                    <a href="images/gift02-1.png"><img loading="lazy" src="images/gift02-1.png" /></a>
+                                 <div class="gift-s3-inner">
+                                        <h1>
+                                            <div class="text-center big">第一重</div>
+                                            消費滿NT$420即贈「銀河風人物收藏卡」1包(內含行星透卡1張及人物卡1張)+精緻動漫小禮
+                                        </h1>
+                                        <div class="txt">
+                                            <p>
+                                                ．台灣角川2025年終感謝祭限定「銀河風人物收藏卡」卡包，3款隨機贈送。<br /> ．累計贈送，單筆消費最多可拿10包「銀河風人物收藏卡」。<br /> ．數量有限，送完為止。
+                                            </p>
+                                        </div>
+                                 </div>
+
+                                    <!-- 第一重新增：數位收藏卡活動 -->
+                                   <div class="gift-s3-inner">
+                                        <div class="digital-card-box" style="margin-top: 1.5rem;">
+                                            <img src="images/digi-moon2.png" alt="數位限定收藏卡" style="width: 120px; display:block;
+                                            float: left; margin:0 20px 0 0;">
+
+                                            <div class="digital-card-text" style="font-size: 15px; line-height: 1.7; color: #333;">
+                                                <p><strong>■ 加碼數位好禮掃 code 就送</strong></p>
+                                                <p>
+                                                    活動期間，於快閃店活動文宣掃 QR 碼，加入台灣角川官方 LINE 帳號會員後可隨機獲得 1 張<br> 「台灣角川 2025 年終感謝祭」限定「銀河風人物收藏卡（數位款）」 ，共 4 款，隨機贈送。
+                                                </p>
+                                                <p>．數位贈品下載時間至 <strong>2025/12/08</strong> 為止。</p>
+                                            </div>
+                                        </div>
+                                   </div>
                                 </li>
                                 <li>
-                                    <a href="images/gift02-2.png"><img src="images/gift02-2.png" /></a>
+                                    <a href="images/gift02-2.png"><img loading="lazy" src="images/gift02-2.png" /></a>
                                     <h1>
                                         <div class="text-center big">第二重</div>
                                         消費滿NT$900 即贈動漫PP提袋
@@ -194,7 +218,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/gift02-3.png"><img src="images/gift02-3.png" /></a>
+                                    <a href="images/gift02-3.png"><img loading="lazy" src="images/gift02-3.png" /></a>
                                     <h1>
                                         <div class="text-center big">第三重</div>
                                         消費滿NT$3,990 即贈人物造型貼
@@ -206,7 +230,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/gift02-3.png"><img src="images/gift02-4.png" /></a>
+                                    <a href="images/gift02-4.png"><img loading="lazy" src="images/gift02-4.png" /></a>
                                     <h1>
                                         <div class="text-center big">第四重</div>
                                         消費滿NT$4,990 即贈JK狼人殺卡牌
@@ -226,149 +250,148 @@
                 <!-- section 2 -->
                 <div id="books_cont">
                     <div class="container">
-                        <div class="title wow fadeInUp">
+                        <div class="title">
                             <h3>首賣特裝&限定版</h3>
                         </div>
-                        <div class="list_book list_book4 wow fadeInUp">
+                        <div class="list_book list_book4">
                             <li>
-                                <img src="images/book1-2.png" />
+                                <img loading="lazy" src="images/book1-1.png" />
                                 <div class="txt txth1">
                                     歡迎來到實力至上主義的教室 2年級篇 (12.5)【全套收納BOX典藏版】
                                     <br />定價：NT$1,500<br />作者：衣笠彰梧｜插畫：トモセシュンサク
                                 </div>
                             </li>
-
                             <li>
-                                <img src="images/book1-3.png" />
+                                <img loading="lazy" src="images/book1-2.png" />
                                 <div class="txt txth1">
-                                    歡迎來到實力至上主義的教室 2年級篇 (12.5)【特裝版】
-                                    <br />定價：NT$1,100 <br /> 作者：衣笠彰梧｜插畫：トモセシュンサク
-                                </div>
-                            </li>
-                            <li>
-                                <img src="images/book1-4.png" />
-                                <div class="txt txth1">
-                                    驚爆危機 Family (2)【特裝版】<br /> 定價：NT$990
+                                    驚爆危機 Family (2)【特裝版】<br />定價：NT$990
                                     <br />作者：賀東招二｜插畫：四季童子
                                 </div>
                             </li>
                             <li>
-                                <img src="images/book1-1.png" />
+                                <img loading="lazy" src="images/book1-3.png" />
                                 <div class="txt txth1">
-                                    我買下了與她的每週密會 (6) ～在一個屋簷下，屬於兩人的祕密～【特裝版】【限】<br /> 定價：NT$800
-                                    <br /> 作者：羽田宇佐｜插畫：U35
+                                    我買下了與她的每週密會 (6) ～在一個屋簷下，屬於兩人的祕密～【特裝版】【限】
+                                    <br />定價：NT$800 <br />作者：羽田宇佐｜插畫：U35
+                                </div>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="images/book1-4.png" />
+                                <div class="txt txth1">
+                                    魔法偵探時崎狂三事件簿(1)<br /> 定價：NT$240
+                                    <br /> 作者：橘公司｜插畫：つなこ
                                 </div>
                             </li>
                         </div>
                     </div>
 
-                    <div class="title wow fadeInUp">
+                    <div class="title">
                         <h3>首賣漫畫</h3>
                     </div>
-                    <div class="list_book list_book4 wow fadeInUp">
+                    <div class="list_book list_book4">
                         <li>
-                            <!-- <img src="images/book1-01.png" /> -->
-                            <img src="images/temp-cover.png" />
+                            <!-- <img loading="lazy" src="images/book1-01.png" /> -->
+                            <img loading="lazy" src="images/temp-cover.png" />
                             <div class="txt txth1">
                                 Lycoris Recoil 莉可麗絲 Recollect (1)<br />定價：NT$140<br />漫畫：阿部かなり｜原作：Spider Lily
                             </div>
                         </li>
                         <li>
-                            <!-- <img src="images/book1-02.png" /> -->
-                            <img src="images/temp-cover.png" />
+                            <!-- <img loading="lazy" src="images/book1-02.png" /> -->
+                            <img loading="lazy" src="images/temp-cover.png" />
                             <div class="txt txth1">
                                 生馬肉美味無敵 <br />定價：NT$150<br />作者：桜井さよる
                             </div>
                         </li>
                         <li>
-                            <!-- <img src="images/book1-03.png" /> -->
-                            <img src="images/temp-cover.png" />
+                            <!-- <img loading="lazy" src="images/book1-03.png" /> -->
+                            <img loading="lazy" src="images/temp-cover.png" />
                             <div class="txt txth1">
                                 雙星的天劍士 (1)<br />定價：NT$140<br />漫畫：東皓司｜原作：七野りく｜角色原案：cura
                             </div>
                         </li>
                         <li>
-                            <img src="images/book1-04.png" />
+                            <img loading="lazy" src="images/book1-04.png" />
                             <div class="txt txth1">
                                 陰陽眼見子 (11) 【限】<br />定價：NT$140<br />作者：泉朝樹
                             </div>
                         </li>
                         <li>
-                            <!-- <img src="images/book1-05.png" /> -->
-                            <img src="images/temp-cover.png" />
+                            <!-- <img loading="lazy" src="images/book1-05.png" /> -->
+                            <img loading="lazy" src="images/temp-cover.png" />
                             <div class="txt txth1">
                                 鄰座的黑川同學 (2) <br />定價：NT$140<br />作者：伊藤京介
                             </div>
                         </li>
                         <li>
-                            <!-- <img src="images/book1-06.png" /> -->
-                            <img src="images/temp-cover.png" />
+                            <!-- <img loading="lazy" src="images/book1-06.png" /> -->
+                            <img loading="lazy" src="images/temp-cover.png" />
                             <div class="txt txth1">
                                 霜月同學對路人情有獨鍾～怕生的她只願意向我露出嬌嗔的一面～ (2)
                                 <br />定價：NT$140<br />漫畫：きぐるみ｜原作：八神鏡｜角色原案：Roha
                             </div>
                         </li>
                         <li>
-                            <!-- <img src="images/book1-07.png" /> -->
-                            <img src="images/temp-cover.png" />
+                            <!-- <img loading="lazy" src="images/book1-07.png" /> -->
+                            <img loading="lazy" src="images/temp-cover.png" />
                             <div class="txt txth1">
-                                你的色彩Ｘ直播～今晚再指導蓓兒吧～ (3) 【限】)<br />定價：NT$130<br />作者：守月史貴
+                                你的色彩Ｘ直播～今晚再指導蓓兒吧～ (3) 【限】<br />定價：NT$130<br />作者：守月史貴
                             </div>
                         </li>
                         <li>
-                            <img src="images/book1-8.png" />
+                            <img loading="lazy" src="images/book1-8.png" />
                             <div class="txt txth1">
-                                末世二輪之旅 (6)】<br />定價：NT$140<br />作者：さいとー 栄
+                                末世二輪之旅 (6)<br />定價：NT$140<br />作者：さいとー 栄
                             </div>
                         </li>
                         <li>
-                            <!-- <img src="images/book1-9.png" /> -->
-                            <img src="images/temp-cover.png" />
+                            <!-- <img loading="lazy" src="images/book1-9.png" /> -->
+                            <img loading="lazy" src="images/temp-cover.png" />
                             <div class="txt txth1">
                                 我不會免費跟妳上床 (8) 【限】<br />定價：NT$140<br />作者：檜原フキ
                             </div>
                         </li>
                         <li>
-                            <!-- <img src="images/book1-10.png" /> -->
-                            <img src="images/temp-cover.png" />
+                            <!-- <img loading="lazy" src="images/book1-10.png" /> -->
+                            <img loading="lazy" src="images/temp-cover.png" />
                             <div class="txt txth1">
-                                戀愛代理 (3)<br />定價：NT$140<br />漫畫：西沢5㍉｜原作：赤坂アカ
+                                戀愛代理 (3))<br />定價：NT$140<br />漫畫：西沢5㍉｜原作：赤坂アカ
                             </div>
                         </li>
                         <li>
-                            <img src="images/book1-11.png" />
+                            <img loading="lazy" src="images/book1-11.png" />
                             <div class="txt txth1">
                                 情繞柔指卻帶寒 (4)<br />定價：NT$140<br />作者：ウオズミアミ
                             </div>
                         </li>
                         <li>
-                            <img src="images/book1-12.png" />
+                            <img loading="lazy" src="images/book1-12.png" />
                             <div class="txt txth1">
                                 塔之迷宮 (3)<br />定價：NT$140<br />作者：弐瓶勉
                             </div>
                         </li>
                     </div>
 
-                    <div class="title wow fadeInUp">
+                    <div class="title">
                         <h3>首賣輕小說</h3>
                     </div>
-                    <div class="list_book list_book4 wow fadeInUp">
+                    <div class="list_book list_book4">
                         <li>
-                            <img src="images/book3-1.png" />
+                            <img loading="lazy" src="images/book3-1.png" />
                             <div class="txt txth1">
                                 歡迎來到實力至上主義的教室 2年級篇 (12.5)【普通版】<br /> 定價：NT$260
                                 <br /> 作者：衣笠彰梧｜插畫：トモセシュンサク
                             </div>
                         </li>
                         <li>
-                            <img src="images/book3-2.png" />
+                            <img loading="lazy" src="images/book3-2.png" />
                             <div class="txt txth1">
                                 驚爆危機 Family (2) 【普通版】<br /> 定價：NT$240
                                 <br /> 作者：賀東招二｜插畫：四季童子
                             </div>
                         </li>
                         <li>
-                            <img src="images/book3-3.png" />
+                            <img loading="lazy" src="images/book3-3.png" />
                             <div class="txt txth1">
                                 我買下了與她的每週密會 (6) ～在一個屋簷下，屬於兩人的祕密～【普通版】【限】
                                 <br /> 定價：NT$280
@@ -377,11 +400,14 @@
                         </li>
                     </div>
                 </div>
+
                 <!-- section 3 -->
                 <!-- 首賣動漫精品 -->
                 <div id="goods_out">
-                    <div class="title wow fadeInUp">
+
+                    <div class="title">
                         <div><br><img src="images/title03.png" /></div>
+
                     </div>
                     <!-- Tabs header -->
                     <ul class="goods-tab">
@@ -391,17 +417,17 @@
                         <li data-tab="tab-d">《全知讀者視角(漫畫)》</li>
                     </ul>
 
-                    <!-- Tab Contents -------------------------------------------->
+                    <!-- Tab Contents ------------------------------------------- -->
 
                     <!-- TAB A：我的老朋友們 -->
                     <div id="tab-a" class="goods-tab-content active">
                         <div class="title">
                             <h3>《我的老朋友們》</h3>
                         </div>
-                        <div class="goodsout wow fadeInUp">
-                            <div class="list_book list_goods wow fadeInUp">
+                        <div class="goodsout">
+                            <div class="list_book list_goods">
                                 <li>
-                                    <a href="images/goods/01.jpg"><img src="images/goods/01.jpg" /></a>
+                                    <a href="images/goods/01.jpg"><img loading="lazy" src="images/goods/01.jpg" /></a>
                                     <div class="txt">
                                         <p>涼宮春日的憂鬱(原作) 紀念幣 A</p>
                                     </div>
@@ -411,7 +437,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/02.jpg"><img src="images/goods/02.jpg" /></a>
+                                    <a href="images/goods/02.jpg"><img loading="lazy" src="images/goods/02.jpg" /></a>
                                     <div class="txt">
                                         <p>聖魔之血(原作) 紀念幣 A</p>
                                     </div>
@@ -421,7 +447,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/03.jpg"><img src="images/goods/03.jpg" /></a>
+                                    <a href="images/goods/03.jpg"><img loading="lazy" src="images/goods/03.jpg" /></a>
                                     <div class="txt">
                                         <p>TIGER×DRAGON 龍虎戀人(原作) 紀念幣 A</p>
                                     </div>
@@ -431,7 +457,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/04.jpg"><img src="images/goods/04.jpg" /></a>
+                                    <a href="images/goods/04.jpg"><img loading="lazy" src="images/goods/04.jpg" /></a>
                                     <div class="txt">
                                         <p>幸運☆星(原作) 紀念幣 A</p>
                                     </div>
@@ -441,9 +467,11 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/05.jpg"><img src="images/goods/05.jpg" /></a>
+                                    <a href="images/goods/05.jpg"><img loading="lazy" src="images/goods/05.jpg" /></a>
                                     <div class="txt">
-                                        <p>櫻花莊的寵物女孩(原作) 透明立方 A</p>
+                                        <p>
+                                            櫻花莊的寵物女孩(原作) 透明立方 A
+                                        </p>
                                     </div>
                                     <div class="price">
                                         <div class="btn">定價</div>
@@ -451,9 +479,11 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/06.jpg"><img src="images/goods/06.jpg" /></a>
+                                    <a href="images/goods/06.jpg"><img loading="lazy" src="images/goods/06.jpg" /></a>
                                     <div class="txt">
-                                        <p>灼眼的夏娜(原作) 透明立方 A</p>
+                                        <p>
+                                            灼眼的夏娜(原作) 透明立方 A
+                                        </p>
                                     </div>
                                     <div class="price">
                                         <div class="btn">定價</div>
@@ -461,9 +491,11 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/07.jpg"><img src="images/goods/07.jpg" /></a>
+                                    <a href="images/goods/07.jpg"><img loading="lazy" src="images/goods/07.jpg" /></a>
                                     <div class="txt">
-                                        <p>涼宮春日的憂鬱(原作) 透明立方 A</p>
+                                        <p>
+                                            涼宮春日的憂鬱(原作) 透明立方 A
+                                        </p>
                                     </div>
                                     <div class="price">
                                         <div class="btn">定價</div>
@@ -471,7 +503,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/08.jpg"><img src="images/goods/08.jpg" /></a>
+                                    <a href="images/goods/08.jpg"><img loading="lazy" src="images/goods/08.jpg" /></a>
                                     <div class="txt">
                                         <p>聖魔之血(原作) 透明立方 A</p>
                                     </div>
@@ -481,7 +513,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/09.jpg"><img src="images/goods/09.jpg" /></a>
+                                    <a href="images/goods/09.jpg"><img loading="lazy" src="images/goods/09.jpg" /></a>
                                     <div class="txt">
                                         <p>TIGER×DRAGON 龍虎戀人(原作) 透明立方 A</p>
                                     </div>
@@ -491,7 +523,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/10.jpg"><img src="images/goods/10.jpg" /></a>
+                                    <a href="images/goods/10.jpg"><img loading="lazy" src="images/goods/10.jpg" /></a>
                                     <div class="txt">
                                         <p>我的老朋友們 盲抽壓克力磁鐵</p>
                                     </div>
@@ -501,7 +533,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/11.jpg"><img src="images/goods/11.jpg" /></a>
+                                    <a href="images/goods/11.jpg"><img loading="lazy" src="images/goods/11.jpg" /></a>
                                     <div class="txt">
                                         <p>我的老朋友們 盲抽迷你色紙</p>
                                     </div>
@@ -514,15 +546,15 @@
                         </div>
                     </div>
 
-                    <!-- TAB B：DATE A LIVE -->
+                    <!-- TAB B：《DATE A LIVE 約會大作戰(原作)》 -->
                     <div id="tab-b" class="goods-tab-content">
-                        <div class="title">
+                        <div class="title" id="goodstitle">
                             <h3>《DATE A LIVE 約會大作戰(原作)》</h3>
                         </div>
-                        <div class="goodsout wow fadeInUp">
-                            <div class="list_book list_goods wow fadeInUp">
+                        <div class="goodsout">
+                            <div class="list_book list_goods">
                                 <li>
-                                    <a href="images/goods/2-01.jpg"><img src="images/goods/2-01.jpg" /></a>
+                                    <a href="images/goods/2-01.jpg"><img loading="lazy" src="images/goods/2-01.jpg" /></a>
                                     <div class="txt">
                                         <p>DATE A LIVE 約會大作戰(原作) 炫彩壓克力鑰匙圈 D</p>
                                     </div>
@@ -532,7 +564,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/2-02.jpg"><img src="images/goods/2-02.jpg" /></a>
+                                    <a href="images/goods/2-02.jpg"><img loading="lazy" src="images/goods/2-02.jpg" /></a>
                                     <div class="txt">
                                         <p>DATE A LIVE 約會大作戰(原作) 炫彩壓克力鑰匙圈 E</p>
                                     </div>
@@ -542,9 +574,9 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/2-03.jpg"><img src="images/goods/2-03.jpg" /></a>
+                                    <a href="images/goods/2-03.jpg"><img loading="lazy" src="images/goods/2-03.jpg" /></a>
                                     <div class="txt">
-                                        <p>DATE A LIVE 約會大作戰(原作) 軟軟胸章 A</p>
+                                        <p>TDATE A LIVE 約會大作戰(原作) 軟軟胸章 A</p>
                                     </div>
                                     <div class="price">
                                         <div class="btn">定價</div>
@@ -552,9 +584,9 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/2-04.jpg"><img src="images/goods/2-04.jpg" /></a>
+                                    <a href="images/goods/2-04.jpg"><img loading="lazy" src="images/goods/2-04.jpg" /></a>
                                     <div class="txt">
-                                        <p>DATE A LIVE 約會大作戰(原作) 軟軟胸章 B</p>
+                                        <p>TDATE A LIVE 約會大作戰(原作) 軟軟胸章 B</p>
                                     </div>
                                     <div class="price">
                                         <div class="btn">定價</div>
@@ -562,9 +594,11 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/2-05.jpg"><img src="images/goods/2-05.jpg" /></a>
+                                    <a href="images/goods/2-05.jpg"><img loading="lazy" src="images/goods/2-05.jpg" /></a>
                                     <div class="txt">
-                                        <p>DATE A LIVE 約會大作戰(原作) 軟軟胸章 C</p>
+                                        <p>
+                                            TDATE A LIVE 約會大作戰(原作) 軟軟胸章 C
+                                        </p>
                                     </div>
                                     <div class="price">
                                         <div class="btn">定價</div>
@@ -572,9 +606,11 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/2-06.jpg"><img src="images/goods/2-06.jpg" /></a>
+                                    <a href="images/goods/2-06.jpg"><img loading="lazy" src="images/goods/2-06.jpg" /></a>
                                     <div class="txt">
-                                        <p>DATE A LIVE 約會大作戰(原作) 軟軟胸章 組合</p>
+                                        <p>
+                                            DATE A LIVE 約會大作戰(原作) 軟軟胸章 C
+                                        </p>
                                     </div>
                                     <div class="price">
                                         <div class="btn">定價</div>
@@ -582,9 +618,11 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/2-07.jpg"><img src="images/goods/2-07.jpg" /></a>
+                                    <a href="images/goods/2-07.jpg"><img loading="lazy" src="images/goods/2-07.jpg" /></a>
                                     <div class="txt">
-                                        <p>DATE A LIVE 約會大作戰(原作) 電競滑鼠墊 C</p>
+                                        <p>
+                                            DATE A LIVE 約會大作戰(原作) 電競滑鼠墊 C
+                                        </p>
                                     </div>
                                     <div class="price">
                                         <div class="btn">定價</div>
@@ -592,7 +630,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/2-08.jpg"><img src="images/goods/2-08.jpg" /></a>
+                                    <a href="images/goods/2-08.jpg"><img loading="lazy" src="images/goods/2-08.jpg" /></a>
                                     <div class="txt">
                                         <p>DATE A LIVE 約會大作戰(原作) 電競滑鼠墊 D</p>
                                     </div>
@@ -602,7 +640,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/2-09.jpg"><img src="images/goods/2-09.jpg" /></a>
+                                    <a href="images/goods/2-09.jpg"><img loading="lazy" src="images/goods/2-09.jpg" /></a>
                                     <div class="txt">
                                         <p>DATE A LIVE 約會大作戰(原作) 組合壓克力立牌 A</p>
                                     </div>
@@ -612,7 +650,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="images/goods/2-10.jpg"><img src="images/goods/2-10.jpg" /></a>
+                                    <a href="images/goods/2-10.jpg"><img loading="lazy" src="images/goods/2-10.jpg" /></a>
                                     <div class="txt">
                                         <p>DATE A LIVE 約會大作戰(原作) 組合壓克力立牌 B</p>
                                     </div>
@@ -621,6 +659,7 @@
                                         <div>NT$340</div>
                                     </div>
                                 </li>
+
                             </div>
                         </div>
                     </div>
@@ -631,7 +670,7 @@
                             <h3>《不時輕聲地以俄語遮羞的鄰座艾莉同學(原作)》</h3>
                         </div>
                         <div class="goodsout">
-                            <div class="list_book list_goods wow fadeInUp">
+                            <div class="list_book list_goods">
                                 <li>
                                     <a href="images/goods/3-01.jpg"><img src="images/goods/3-01.jpg" /></a>
                                     <div class="txt">
@@ -735,176 +774,274 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- TAB D：全知讀者視角 -->
                     <div id="tab-d" class="goods-tab-content">
                         <div class="title">
                             <h3>《全知讀者視角(漫畫)》</h3>
                         </div>
                         <div class="goodsout">
-
-                            <!--  -->
+                            <div class="list_book list_goods">
+                                <li>
+                                    <a href="images/goods/4-01.jpg"><img src="images/goods/4-01.jpg" /></a>
+                                    <div class="txt">
+                                        <p>不時輕聲地以俄語遮羞的鄰座艾莉同學(原作) 旋轉立牌 F</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="btn">定價</div>
+                                        <div>NT$400</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="images/goods/4-02.jpg"><img src="images/goods/4-02.jpg" /></a>
+                                    <div class="txt">
+                                        <p>不時輕聲地以俄語遮羞的鄰座艾莉同學(原作) 旋轉立牌 G</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="btn">定價</div>
+                                        <div>NT$400</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="images/goods/4-03.jpg"><img src="images/goods/4-03.jpg" /></a>
+                                    <div class="txt">
+                                        <p>不時輕聲地以俄語遮羞的鄰座艾莉同學(原作) 壓克力自拍棒 A</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="btn">定價</div>
+                                        <div>NT$320</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="images/goods/4-04.jpg"><img src="images/goods/4-04.jpg" /></a>
+                                    <div class="txt">
+                                        <p>不時輕聲地以俄語遮羞的鄰座艾莉同學(原作) 壓克力自拍棒 B</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="btn">定價</div>
+                                        <div>NT$320</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="images/goods/4-05.jpg"><img src="images/goods/4-05.jpg" /></a>
+                                    <div class="txt">
+                                        <p>不時輕聲地以俄語遮羞的鄰座艾莉同學(原作) 壓克力杯墊立牌 A</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="btn">定價</div>
+                                        <div>NT$280</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="images/goods/4-06.jpg"><img src="images/goods/4-06.jpg" /></a>
+                                    <div class="txt">
+                                        <p>不時輕聲地以俄語遮羞的鄰座艾莉同學(原作) 壓克力杯墊立牌 B</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="btn">定價</div>
+                                        <div>NT$280</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="images/goods/4-07.jpg"><img src="images/goods/4-07.jpg" /></a>
+                                    <div class="txt">
+                                        <p>不時輕聲地以俄語遮羞的鄰座艾莉同學(原作) 3D光柵胸章 A</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="btn">定價</div>
+                                        <div>NT$120</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="images/goods/4-08.jpg"><img src="images/goods/4-08.jpg" /></a>
+                                    <div class="txt">
+                                        <p>不時輕聲地以俄語遮羞的鄰座艾莉同學(原作) 3D光柵胸章 B</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="btn">定價</div>
+                                        <div>NT$120</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="images/goods/4-09.jpg"><img src="images/goods/4-09.jpg" /></a>
+                                    <div class="txt">
+                                        <p>不時輕聲地以俄語遮羞的鄰座艾莉同學(原作) 3D光柵胸章 C</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="btn">定價</div>
+                                        <div>NT$120</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="images/goods/4-10.jpg"><img src="images/goods/4-10.jpg" /></a>
+                                    <div class="txt">
+                                        <p>不時輕聲地以俄語遮羞的鄰座艾莉同學(原作) 束口後背包 A</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="btn">定價</div>
+                                        <div>NT$550</div>
+                                    </div>
+                                </li>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="list_menu wow fadeInUp">
+                    <div class="list_menu">
                         <li><br><br>
-                            <a href="https://kadokawa.io/RRKdH" target="_blank">立即購買</a>
+                            <a href="https://www.kadokawa.com.tw/" target="_blank">立即購買</a>
                         </li>
                     </div>
                 </div>
+
+
             </div>
-        </div>
 
-
-
-        <!--section 4  會場限定抽卡機-->
-        <div class="sp-title sp-title1 wow fadeInUp">
-            <img src="images/title04.png">
-        </div>
-        <div class="gift-title wow fadeInUp">
-            <h2 style="font-size: 17px; font-weight: bold;">3種不同型式的特別卡機！不同質感，不同感覺，不同的超感謝！
-            </h2>
-        </div>
-        <div class="list_book list_book2 wow fadeInUp">
-            <li>
-                <a href="images/draw-a.png"><img src="images/draw-a.png"></a><br>
-                <div class="txt">
-                    <h4 class="card-h4">金屬感抽卡機</h4>
-                    <p>《DATE A LIVE 約會大作戰》<br><br> 1抽1張100元</p>
-                </div>
-            </li>
-            <li>
-                <div class="owl-carousel owl-theme">
-                    <a href="images/draw-c-01.png"><img src="images/draw-c-01.png"></a>
-                    <a href="images/draw-c-02.png"><img src="images/draw-c-02.png"></a>
-                    <a href="images/draw-c-03.png"><img src="images/draw-c-03.png"></a>
-                </div>
-                <div class="txt">
-                    <h4 class="card-h4">銀箔抽卡機</h4>
-                    <p>《全知讀者視角》、《約會大作戰DATE A BULLET 赤黑新章》、《誰殺了勇者》<br>1抽2張150元
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="owl-carousel owl-theme">
-                    <a href="images/draw-d-01.png"><img src="images/draw-d-01.png"></a>
-                    <a href="images/draw-d-02.png"><img src="images/draw-d-02.png"></a>
-                </div>
-                <div class="txt">
-                    <h4 class="card-h4">硬卡抽卡機</h4>
-                    <p>《《背叛者的情歌》、《渣男椎名學長與瘋男佐佐木學弟》
-                        <br>1抽1張100元
-                    </p>
-                </div>
-            </li>
-        </div>
-        <!--section 5  超感謝！特選套書-->
-        <div id="main_cont" style="margin-top: 40px;">
-            <div class="title wow fadeInUp">
-                <img src="images/title05.png" />
-                <table class="rwd-table">
-                    <thead>
-                        <tr>
-                            <th>編號</th>
-                            <th>品項</th>
-                            <th>超值價</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>(小說)Silent Witch 沉默魔女的祕密 (1-9)</td>
-                            <td>$1349</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>(小說)靠死亡遊戲混飯吃。(1-5)</td>
-                            <td>$699</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>(小說)我買下了與她的每週密會 ～在一個屋簷下，屬於兩人的祕密～(1-5)</td>
-                            <td>$799</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>(小說)男女之間存在純友情嗎？（不，不存在！）(1-10)</td>
-                            <td>$1499</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>(小說)青春豬頭少年系列 (1-8)</td>
-                            <td>$1149</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>(小說)青春豬頭少年系列 (9-15)</td>
-                            <td>$949</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>(小說)新海誠精選套書</td>
-                            <td>$549</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>(漫畫)哈利路亞寶貝 (1-5)</td>
-                            <td>$449</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>(漫畫)Lycoris Recoil 莉可麗絲 (1-5)</td>
-                            <td>$420</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>(漫畫)Silent Witch 沉默魔女的祕密 (1-4)</td>
-                            <td>$329</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>(漫畫)貓咪好夥伴小圓圓和小八 (1-6)</td>
-                            <td>$420</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>(漫畫)貓生好難 (1-4)</td>
-                            <td>$749</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="two-box">
-                    <div class="box">
-                        <img src="images/title05-1.png">
-                        <img src="images/gift.png" alt="" style="width: 180px;margin: 0 auto;">
-                        <p style="font-size: 14px;margin-bottom: 20px;">花車內所有精品全部都只要100元哦！</p>
-                    </div>
-                    <div class="box"> <img src="images/title05-2.png"><br><img src="images/section5-2.png" alt="" style="width: 180px;margin: 0 auto;">
-                        <p style="font-size: 14px;margin-bottom: 20px;">．數量有限，售完為止。</p>
-                    </div>
-                </div>
-
-                </h4>
+            <!--section 4  會場限定抽卡機-->
+            <div class="sp-title sp-title1">
+                <img loading="lazy" src="images/title04.png">
             </div>
-        </div>
-        <!-- event -->
-        <div class="location-out" id="location">
-            <div class="location" id="location_in">
-                <div class="location-in">
-                    <div class="map-col">
-                        <li>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.698065390688!2d121.55743991114204!3d25.044318727717215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbf23ce4b3b%3A0xc82b0f87ff7df9dc!2z5p2-5bGx5paH5Ym15ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1730972600677!5m2!1szh-TW!2stw"
-                                width="400" height="300" style="border: 2px solid #e5e4e7" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-                        </li>
-                        <li>
-                            <h3>活動資訊</h3>
-                            <p class="time" style="color:#0f0f10bf;font-size: 18px;line-height: 2;">
-                                時間：<b>12/5</b>(五)~<b>12/8</b>(一)
-                                <br class="visible-xs" />每日<b>10:30~20:00(※12/8(一)開放至17:00)</b><br>地點：台北市信義區光復南路133號<br /></p>
-                            <p class="time" style="color:#0f0f10bf;font-size: 14px;line-height: 2;">
+            <div class="gift-title">
+                <h2 style="font-size: 17px; font-weight: bold;">3種不同型式的特別卡機！不同質感，不同感覺，不同的超感謝！
+                </h2>
+            </div>
+            <div class="list_book list_book2">
+                <li>
+                    <a href="images/draw-a.png"><img loading="lazy" src="images/draw-a.png"></a><br>
+                    <div class="txt">
+                        <h4 class="card-h4">金屬感抽卡機</h4>
+                        <p>《DATE A LIVE 約會大作戰》<br><br> 1抽1張100元</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="owl-carousel owl-theme">
+                        <a href="images/draw-c-01.png"><img loading="lazy" src="images/draw-c-01.png"></a>
+                        <a href="images/draw-c-02.png"><img loading="lazy" src="images/draw-c-02.png"></a>
+                        <a href="images/draw-c-03.png"><img loading="lazy" src="images/draw-c-03.png"></a>
+                    </div>
+                    <div class="txt">
+                        <h4 class="card-h4">銀箔抽卡機</h4>
+                        <p>《全知讀者視角》、《約會大作戰DATE A BULLET 赤黑新章》、《誰殺了勇者》<br>1抽2張150元
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="owl-carousel owl-theme">
+                        <a href="images/draw-d-01.png"><img loading="lazy" src="images/draw-d-01.png"></a>
+                        <a href="images/draw-d-02.png"><img loading="lazy" src="images/draw-d-02.png"></a>
+                    </div>
+                    <div class="txt">
+                        <h4 class="card-h4">硬卡抽卡機</h4>
+                        <p>《《背叛者的情歌》、《渣男椎名學長與瘋男佐佐木學弟》
+                            <br>1抽1張100元
+                        </p>
+                    </div>
+                </li>
+            </div>
+            <!--section 5  超感謝！特選套書-->
+            <div id="main_cont" style="margin-top: 40px;">
+                <div class="title">
+                    <img loading="lazy" src="images/title05.png" />
+                    <table class="rwd-table">
+                        <thead>
+                            <tr>
+                                <th>編號</th>
+                                <th>品項</th>
+                                <th>超值價</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>(小說)Silent Witch 沉默魔女的祕密 (1-9)</td>
+                                <td>$1349</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>(小說)靠死亡遊戲混飯吃。(1-5)</td>
+                                <td>$699</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>(小說)我買下了與她的每週密會 ～在一個屋簷下，屬於兩人的祕密～(1-5)</td>
+                                <td>$799</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>(小說)男女之間存在純友情嗎？（不，不存在！）(1-10)</td>
+                                <td>$1499</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>(小說)青春豬頭少年系列 (1-8)</td>
+                                <td>$1149</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>(小說)青春豬頭少年系列 (9-15)</td>
+                                <td>$949</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>(小說)新海誠精選套書</td>
+                                <td>$549</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>(漫畫)哈利路亞寶貝 (1-5)</td>
+                                <td>$449</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>(漫畫)Lycoris Recoil 莉可麗絲 (1-5)</td>
+                                <td>$420</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>(漫畫)Silent Witch 沉默魔女的祕密 (1-4)</td>
+                                <td>$329</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>(漫畫)貓咪好夥伴小圓圓和小八 (1-6)</td>
+                                <td>$420</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>(漫畫)貓生好難 (1-4)</td>
+                                <td>$749</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="two-box">
+                        <div class="box">
+                            <img loading="lazy" src="images/title05-1.png">
+                            <img loading="lazy" src="images/gift.png" alt="" style="width: 180px;margin: 0 auto;">
+                            <p style="font-size: 14px;margin-bottom: 20px;">花車內所有精品全部都只要100元哦！</p>
+                        </div>
+                        <div class="box"> <img loading="lazy" src="images/title05-2.png"><br><img loading="lazy" src="images/section5-2.png" alt="" style="width: 180px;margin: 0 auto;">
+                            <p style="font-size: 14px;margin-bottom: 20px;">．數量有限，售完為止。</p>
+                        </div>
+                    </div>
 
-                                <span class="small">（松山文創園區－南向製菸工廠，<br />捷運國父紀念館站5號出口，步行約10分鐘。）</span
+                    </h4>
+                </div>
+            </div>
+            <!-- event -->
+            <div class="location-out" id="location">
+                <div class="location" id="location_in">
+                    <div class="location-in">
+                        <div class="map-col">
+                            <li>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.698065390688!2d121.55743991114204!3d25.044318727717215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbf23ce4b3b%3A0xc82b0f87ff7df9dc!2z5p2-5bGx5paH5Ym15ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1730972600677!5m2!1szh-TW!2stw"
+                                    width="400" height="300" style="border: 2px solid #e5e4e7" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                            </li>
+                            <li>
+                                <h3>活動資訊</h3>
+                                <p class="time" style="color:#0f0f10bf;font-size: 18px;line-height: 2;">
+                                    時間：<b>12/5</b>(五)~<b>12/8</b>(一)
+                                    <br class="visible-xs" />每日<b>10:30~20:00(※12/8(一)開放至17:00)</b><br>地點：台北市信義區光復南路133號<br /></p>
+                                <p class="time" style="color:#0f0f10bf;font-size: 14px;line-height: 2;">
+
+                                    <span class="small">（松山文創園區－南向製菸工廠，<br />捷運國父紀念館站5號出口，步行約10分鐘。）</span
                   >
                 </p>
               </li>
@@ -915,29 +1052,16 @@
       </div>
       <footer>
         <div class="footer-left">
-          <div class="copy-web">
-            ©Koushi Tachibana, Tsunako 2025<br />
-            KADOKAWA CORPORATION<br />
-            ©Matsuri Isora, Nanna Fujimi 2025 / KADOKAWA CORPORATION<br />
-            © Sleepy-C(3B2S STUDIO), UMI, singNsong / REDICE STUDIO
-          </div>
+            <div class="copy-web">
+                <div class="copy-col">
+                    ©Anri Sakano 2022 ©Daisuke Aizawa 2022 ©Touzai 2022<br /> ©Asato Asato 2017,2019-2021 Illustration：Shirabii<br /> ©Bokuto Uno 2019 Illustration：Miyukiruria<br /> ©Ghost Mikawa 2024 Illustration: Hiten<br /> ©Hajime Kamoshida 2016,2022 Illustration：Keji Mizoguchi<br /> ©Isuna Hasekura 2021 Illustration：Jyuu Ayakura<br /> ©Joyo Nishi 2021 Illustration：Retake 2022/<br /> ©Jyuu Ayakura 2021 ©Isuna Hasekura 2021<br /> ©Koushi Tachibana, Tsunako 2011,2021,2023,2025<br /> ©Kurone Mishima, Natsume Akatsuki 2020<br /> ©Natsume Akatsuki, Kurone Mishima 2022<br /> ©Makiko Nagaoka, magako 2021<br /> ©Matsuri Isora, Nanna Fujimi 2021,2025<br /> ©Sunsunsun, Momoco 2022<br /> ©Momoco, Sunsunsun 2024
+                </div>
 
-          <div class="copy-mobile">
-            <!-- 01 -->
-            <div class="scroll-item">
-              ©Koushi Tachibana, Tsunako 2025<br />
-              KADOKAWA CORPORATION<br />
-              ©Matsuri Isora, Nanna Fujimi 2025 / KADOKAWA CORPORATION<br />
-              © Sleepy-C(3B2S STUDIO), UMI, singNsong / REDICE STUDIO
-            </div>
-            <!-- 02 -->
-            <div class="scroll-item">
-              ©Koushi Tachibana, Tsunako 2025<br />
-              KADOKAWA CORPORATION<br />
-              ©Matsuri Isora, Nanna Fujimi 2025 / KADOKAWA CORPORATION<br />
-              © Sleepy-C(3B2S STUDIO), UMI, singNsong / REDICE STUDIO
-            </div>
-          </div>
+                <div class="copy-col">
+                    ©Nagaru Tanigawa, Noizi Ito 2022<br /> ©Nana Nanana 2021 Illustration：Parum<br /> ©Reki Kawahara 2022 Illustration：abec<br /> ©Rifujin na Magonote 2020 Illustration：Shirotaka<br /> ©Rui Tsukiyo, Reia 2020<br /> ©Shu 2018 Illustration：SHIZUMAYOSHINORI<br /> ©Syougo Kinugasa 2018,2019,2022 Illustration：Tomoseshunsaku<br /> ©Tomoki Izumi 2021<br /> ©Usa Haneda, U35 2024<br /> ©Yashichiro Takahashi 2023 Illustration:Noizi Ito<br /> ©Yuu Hidaka,Tantan 2021<br /> ©Yuzi Keino, Tantan 2022<br /> KADOKAWA CORPORATION<br /> © Sleepy-C(3B2S STUDIO), UMI, singNsong / REDICE STUDIO
+                </div>
+              </div>
+
         </div>
 
         <div class="footer-right">
@@ -947,33 +1071,33 @@
               target="_blank"
               rel="noreferrer noopenner"
             >
-              <img src="images/icon_fb.png" alt="Facebook" />
+              <img loading="lazy" src="images/icon_fb.png" alt="Facebook" />
             </a>
             <a
               href="https://www.instagram.com/kadokawataiwan/"
               target="_blank"
               rel="noreferrer noopenner"
             >
-              <img src="images/icon_ig.png" alt="Instagram" />
+              <img loading="lazy" src="images/icon_ig.png" alt="Instagram" />
             </a>
             <a
               href="https://www.youtube.com/@TWKADOKAWA"
               target="_blank"
               rel="noreferrer noopenner"
             >
-              <img src="images/icon_yt.png" alt="Youtube" />
+              <img loading="lazy" src="images/icon_yt.png" alt="Youtube" />
             </a>
             <a
               href="https://kadokado.io/hhwJh"
               target="_blank"
               rel="noreferrer noopenner"
             >
-              <img src="images/icon_line.png" alt="LINE" />
+              <img loading="lazy" src="images/icon_line.png" alt="LINE" />
             </a>
           </div>
           <div class="copyright">
             台灣角川股份有限公司版權所有，未經許可不可轉載<br />
-            Copyright © 2024 <br />
+            Copyright © 2025<br />
             KADOKAWA TAIWAN CORPORATION <br />
             All Rights Reseved.
           </div>
@@ -992,8 +1116,6 @@
     ></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/color.js"></script>
-    <script src="js/tag.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery.fatNav.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -1013,21 +1135,39 @@
           1024: { items: 1 },
         },
       });
-
-
     </script>
-    <script>
-           $('.goods-tab li').on('click', function () {
-	const tabID = $(this).data('tab');
 
-	// buttons 狀態
-	$('.goods-tab li').removeClass('active');
-	$(this).addClass('active');
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lazyImages = document.querySelectorAll("img[loading='lazy']");
 
-	// content 切換
-	$('.goods-tab-content').removeClass('active');
-	$('#' + tabID).addClass('active');
-  });
+      lazyImages.forEach((img) => {
+        if (img.complete) {
+          img.classList.add("loaded");
+        } else {
+          img.addEventListener("load", () => img.classList.add("loaded"));
+        }
+      });
+    });
+
+    /* --- Goods Tabs 切換功能--- */
+    document.addEventListener("click", function (e) {
+      if (e.target.matches(".goods-tab li")) {
+        const target = e.target.getAttribute("data-tab");
+
+        document.querySelectorAll(".goods-tab li")
+          .forEach(li => li.classList.remove("active"));
+
+        e.target.classList.add("active");
+
+        document.querySelectorAll(".goods-tab-content")
+          .forEach(c => c.classList.remove("active"));
+
+        document.getElementById(target).classList.add("active");
+      }
+    });
     </script>
-  </body>
+
+
+</body>
 </html>
