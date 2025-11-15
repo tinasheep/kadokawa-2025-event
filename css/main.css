@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Kosugi+Maru');
 
 /**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
+* Owl Carousel v2.3.4
+* Copyright 2013-2018 David Deutsch
+* Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+*/
 
 .owl-carousel,
 .owl-carousel .owl-item {
@@ -90,7 +90,7 @@
     background: 0 0;
     color: inherit;
     border: none;
-    padding: 0!important;
+    padding: 0 !important;
     font: inherit
 }
 
@@ -696,9 +696,6 @@ img.mfp-img {
 
 @media screen and (max-width: 800px) and (orientation: landscape),
 screen and (max-height: 300px) {
-    /**
-		 * Remove all paddings around the image on small screen
-		 */
     .mfp-img-mobile .mfp-image-holder {
         padding-left: 0;
         padding-right: 0;
@@ -764,10 +761,10 @@ screen and (max-height: 300px) {
 
 
 /**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
+* Owl Carousel v2.3.4
+* Copyright 2013-2018 David Deutsch
+* Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+*/
 
 .owl-carousel,
 .owl-carousel .owl-item {
@@ -852,7 +849,7 @@ screen and (max-height: 300px) {
     background: 0 0;
     color: inherit;
     border: none;
-    padding: 0!important;
+    padding: 0 !important;
     font: inherit
 }
 
@@ -984,10 +981,10 @@ screen and (max-height: 300px) {
 
 
 /**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
+* Owl Carousel v2.3.4
+* Copyright 2013-2018 David Deutsch
+* Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+*/
 
 .owl-theme .owl-dots,
 .owl-theme .owl-nav {
@@ -1427,7 +1424,8 @@ img {
 
 .title img {
     width: 100%;
-    max-width: 514px;
+    max-width: 400px;
+    margin-top: 20px;
 }
 
 .title3 {
@@ -1446,10 +1444,11 @@ img {
     max-width: 320px;
 }
 
-.sp-title {
+.sp-title img {
     width: 100%;
-    margin: 2rem auto 0 auto;
-    text-align: center;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto 0;
 }
 
 .sp-title1 img {
@@ -1491,7 +1490,6 @@ img {
     font-size: 2rem;
     color: #ba121a;
     font-weight: bold;
-    font-family: 'Noto Sans TC';
 }
 
 .event>li h1 {
@@ -1506,6 +1504,10 @@ img {
     align-items: flex-start;
     position: relative;
     flex-wrap: wrap;
+}
+
+.sale p {
+    margin: 0;
 }
 
 .sale>li {
@@ -1526,7 +1528,6 @@ img {
     font-size: 2rem;
     color: #ba121a;
     font-weight: bold;
-    font-family: 'Noto Sans TC';
 }
 
 .gift-a {
@@ -1551,7 +1552,7 @@ img {
 
 .event .txt {
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 
 .event .txth1 {
@@ -1581,6 +1582,12 @@ img {
 
 .gift img {
     width: 100%;
+}
+
+.first {
+    width: 600px !important;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 .gift_btn {
@@ -1647,7 +1654,7 @@ img {
 }
 
 .gift-s {
-    width: 100%;
+    width: 80%;
     display: flex;
     margin: 0 auto;
     text-align: center;
@@ -1660,6 +1667,12 @@ img {
     padding: .5rem;
     text-align: left;
     /* margin: .5rem; */
+}
+
+.gift-s li img {
+    /* width: 80%; */
+    margin: 0 auto;
+    display: block;
 }
 
 .gift-s2 {
@@ -1682,35 +1695,43 @@ img {
     border: #79bcc8 1px solid;
 }
 
-.gift-s3{
+.gift-s3 {
     width: 100%;
     display: flex;
     margin: 2rem auto;
     text-align: center;
-    justify-content: space-between; /* 三等分比較貼齊 */
+    justify-content: space-between;
+    /* 三等分比較貼齊 */
     flex-wrap: wrap;
 }
 
-.gift-s3-inner{
+.gift-s3-inner {
     width: 75%;
     margin: 0 auto;
 }
+
+
 /* 預設：第二～四重一排三等分 */
-.gift-s3 li{
+
+.gift-s3 li {
     width: 33.333%;
     padding: .5rem;
     text-align: left;
 }
 
+
 /* 第一重：獨佔一整排 */
-.gift-s3 li:first-child{
+
+.gift-s3 li:first-child {
     width: 100%;
-    margin-bottom: 2rem;   /* 與下面三個拉開一點距離 */
+    margin-bottom: 2rem;
+    /* 與下面三個拉開一點距離 */
 }
+
 
 /*
 .gift-s3 img {
-    border: #79bcc8 1px solid;
+border: #79bcc8 1px solid;
 } */
 
 .gift .txt {
@@ -1818,12 +1839,12 @@ h1 {
 #book_out {
     width: 60%;
     position: relative;
-    margin: 1rem auto;
+    margin: 20px auto;
     overflow: hidden;
     background: #fbfecb;
-    /* box-shadow: 10px 5px 5px red; */
+    box-shadow: 5px 5px 12px #95ddef;
     z-index: 1;
-    padding-bottom: 3rem;
+    padding-bottom: 20px;
     border-radius: 30px;
     color: #fff;
 }
@@ -2094,7 +2115,7 @@ h1 {
 }
 
 .goodsout {
-    width: 100%;
+    width: 96%;
     max-width: 1200px;
     margin: 0 auto 0 auto;
     display: flex;
@@ -2278,13 +2299,14 @@ h1 {
 
 .map-col li h3 {
     font-size: 1.6rem;
-    font-family: 'Noto Sans TC';
     font-weight: bold;
     color: #ff9104;
 }
 
 .time {
-    font-family: 'Noto Sans TC';
+    color: #0f0f10bf;
+    font-size: 18px;
+    line-height: 2;
     padding-left: 1rem;
 }
 
@@ -2475,16 +2497,6 @@ pre {
     max-width: 200px;
     width: 100%;
     border: none;
-    /*
-	-moz-box-shadow:2px 2px 4px #8e8e8e;
-	-webkit-box-shadow:2px 2px 4px #8e8e8e;
-	box-shadow:2px 2px 4px #8e8e8e;
-
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-transition: all 0.2s ease-in-out;
-	*/
 }
 
 .bookout {
@@ -2576,7 +2588,7 @@ header
 
 
 /* ==========================================================================
-    Footer
+Footer
 ========================================================================== */
 
 footer {
@@ -2676,25 +2688,32 @@ footer .footer-right .copyright {
     line-height: 1.5rem;
     text-align: end;
 }
+
+
 /* footer copy-web 兩欄佈局 */
-.copy-web{
+
+.copy-web {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     line-height: 1.6;
 }
 
+
 /* 單欄等寬 */
-.copy-web .copy-col{
+
+.copy-web .copy-col {
     width: 50%;
 }
 
+
 /* 手機：改回單欄（你原本 mobile 只顯示 copy-mobile ，但我仍補 RWD 確保乾淨） */
-@media (max-width: 768px){
-    .copy-web{
+
+@media (max-width: 768px) {
+    .copy-web {
         flex-direction: column;
     }
-    .copy-web .copy-col{
+    .copy-web .copy-col {
         width: 100%;
     }
 }
@@ -2724,8 +2743,6 @@ footer .footer-right .copyright {
         align-items: center;
         gap: 1rem;
     }
-
-
     footer .footer-right {
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2922,6 +2939,7 @@ footer .footer-right .copyright {
 @media all and (max-width: 1000px) {
     .main {
         width: 100%;
+        min-height: 560px;
     }
     .pc {
         display: none !important;
@@ -2992,7 +3010,8 @@ footer .footer-right .copyright {
     }
     #main_cont {
         flex-wrap: wrap;
-        padding: 2rem 1rem 0 1rem;
+        padding: 20px 15px 15px;
+        margin-bottom: 20px;
     }
     .white-popup {
         padding: 1rem;
@@ -3027,7 +3046,7 @@ footer .footer-right .copyright {
         font-weight: 500;
     }
     .title h4 {
-        font-size: .75rem;
+        font-size: 16px;
         padding: .5rem 0 .75rem 0;
     }
     .gift_btn {
@@ -3087,7 +3106,8 @@ footer .footer-right .copyright {
     #list_cont {
         text-align: center;
         width: 100%;
-        margin: 2rem auto;
+        margin: 20px auto;
+        padding: 10px;
     }
     .list_menu {
         justify-content: center;
@@ -3115,6 +3135,7 @@ footer .footer-right .copyright {
     }
     .list_book li img {
         max-width: 90%;
+        margin: 10px auto;
     }
     .list_book3>li {
         width: 50%;
@@ -3160,9 +3181,6 @@ footer .footer-right .copyright {
         line-height: 1rem;
         font-size: .75rem;
     }
-    #book_out {
-        padding-top: 0;
-    }
     .m_gift-all {
         padding: 0;
     }
@@ -3174,7 +3192,7 @@ footer .footer-right .copyright {
         font-size: .75rem;
     }
     .list_book .txth1 {
-        display: flex!important;
+        display: flex !important;
         font-size: .8rem;
         line-height: 1.2rem;
     }
@@ -3208,20 +3226,17 @@ footer .footer-right .copyright {
     .logo_out {
         padding: 0;
     }
-    #book_out {
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
     #goods_out {
         padding-top: 0;
         padding-bottom: 3rem;
-        margin: 2rem auto;
+        margin: 0 auto;
     }
     .goodsout {
-        padding: 2rem 0;
+        padding: 10px;
         background-color: #fff;
         border-radius: 1rem;
         margin-bottom: 0;
+        background-color: #ffffff8c;
     }
     .title2 {
         margin: 10px auto 20px auto;
@@ -3499,28 +3514,6 @@ header
     }
 }
 
-@media all and (max-width: 425px) {
-    #web_out {
-        flex-wrap: wrap;
-    }
-    .web_pic {
-        width: 100%;
-    }
-    .web_txt {
-        width: 100%;
-        padding-top: 0;
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-    .web_con {
-        display: block;
-    }
-    body {
-        background-position-y: 30px;
-        background-size: contain;
-    }
-}
-
 @media all and (max-width: 1080px) {
     .sale {
         padding-top: 0;
@@ -3548,15 +3541,11 @@ header
 }
 
 .list_goods>li {
-    height: 420px;
-    /* 小卡共同高度，可自行調整 */
     display: flex;
     flex-direction: column;
 }
 
 .list_goods>li img {
-    height: 250px;
-    /* 圖片固定高度 */
     object-fit: contain;
     /* 保持比例不裁切 */
 }
@@ -3575,7 +3564,7 @@ header
 /* --- Goods Tabs Buttons --- */
 
 .goods-tab {
-    width: 100%;
+    width: 96%;
     max-width: 1200px;
     margin: 20px auto 0 auto;
     padding: 0;
@@ -3614,4 +3603,305 @@ header
 
 .goods-tab-content.active {
     display: block;
+}
+
+
+/* Lightbox 基本樣式 */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+
+/* 右上角 X */
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lightbox.show {
+    display: flex;
+    animation: fadeIn .25s ease;
+}
+
+
+/* unified list_goods for tabs */
+
+.goods-tab-content .list_goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.goods-tab-content .list_goods li {
+    width: calc(100%/6 - 12px);
+    margin: 6px;
+    padding: 12px;
+    background: rgba(255, 255, 255, .7);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+}
+
+.goods-tab-content .list_goods li img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.goods-tab-content .list_goods li .txt {
+    flex: 1;
+}
+
+.goods-tab-content .list_goods li .price {
+    margin-top: auto;
+}
+
+
+/* 手機版 */
+
+
+/* =========================================================
+📱 MOBILE LAYOUT OPTIMIZATION (max-width: 768px)
+========================================================= */
+
+@media (max-width: 768px) {
+    /* ----- 全站間距優化 ----- */
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .container {
+        margin: 0 auto;
+        padding: 0 0;
+    }
+    .title h3 {
+        font-size: 16px;
+        padding: 4px;
+        margin-bottom: 20px;
+    }
+    /* ----- 書籍區 (#books_cont)----- */
+    #books_cont {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    #books_cont .list_book4>li {
+        width: 50%;
+        padding: .5rem;
+    }
+    #books_cont .list_book4 img {
+        width: 65% !important;
+        height: auto !important;
+    }
+    #books_cont .txth1 {
+        font-size: .8rem !important;
+        line-height: 1.2rem !important;
+        padding-top: 0.3rem;
+    }
+    /* ----- TAB 按鈕 ----- */
+    #goods_out {
+        width: 100%;
+    }
+    .goods-tab {
+        gap: .3rem;
+        margin: 0px auto 0 auto;
+    }
+    .goods-tab li {
+        padding: .4rem .8rem;
+        font-size: .85rem;
+    }
+    /* ----- 商品列表（A～C TAB）2 欄布局 ----- */
+    #tab-a .list_goods li,
+    #tab-b .list_goods li,
+    #tab-c .list_goods li {
+        width: calc(50% - 10px) !important;
+        width: calc(33.33% - 10px) !important;
+        height: auto !important;
+        margin: 5px;
+        padding: 0px;
+    }
+    #tab-a .list_goods li img,
+    #tab-b .list_goods li img,
+    #tab-c .list_goods li img {
+        height: 100px !important;
+    }
+    /* ----- TAB D：商品太多 → 3 欄布局 ----- */
+    #tab-d .list_goods li {
+        width: calc(33.33% - 10px) !important;
+        height: auto !important;
+        margin: 5px;
+        padding: 0px;
+    }
+    #tab-d .list_goods li img {
+        height: auto !important;
+        margin-top: 5px;
+        object-fit: contain;
+    }
+    #tab-d .list_goods li .txt {
+        font-size: .75rem;
+        line-height: 1.1rem;
+        margin-bottom: 10px;
+    }
+    /* ----- 商品名稱 / 價格 ----- */
+    .list_goods .txt {
+        font-size: .75rem;
+        line-height: 1.1rem;
+    }
+    .list_goods .price {
+        margin-top: .3rem;
+        padding-bottom: 8px;
+    }
+    /* ----- Lightbox 手機適配 ----- */
+    .lightbox.show {
+        width: 103vw;
+    }
+    .lightbox img {
+        max-width: 90%;
+        max-height: 75%;
+    }
+    .lightbox-close {
+        top: 15px;
+        right: 15px;
+        font-size: 22px;
+    }
+    #book_out {
+        width: 100%;
+    }
+    .first {
+        width: 96% !important;
+    }
+    .gift-s3-inner {
+        width: 96%;
+        margin: 0 auto;
+    }
+    .list_goods .price {
+        display: block !important;
+        text-align: center;
+        margin-top: 4px;
+    }
+    .list_goods .price .btn {
+        display: inline-block;
+        margin-bottom: 3px;
+        font-size: 0.75rem !important;
+        padding: 2px 6px !important;
+    }
+    .list_goods .price div:last-child {
+        font-size: 0.8rem !important;
+        display: block;
+        margin-top: 2px;
+    }
+    .map-col li h3 {
+        font-size: 18px;
+    }
+    .time {
+        font-size: 16px;
+    }
+    .gift h1 {
+        font-size: 16px;
+    }
+    .kv-girl {
+        width: 320px;
+        height: 300px;
+        left: -24%;
+        top: 80px;
+    }
+    .kv-title {
+        top: 60px;
+        width: 66%;
+        filter: drop-shadow(2px 2px 6px rgba(2, 60, 59, 0.7));
+        right: 1%;
+    }
+    .map-top {
+        top: 255px;
+        width: 140px;
+        right: 16%;
+    }
+    .gift-s {
+        width: 100%;
+    }
+    /* 抽卡機區塊 */
+    /* 外層留白 */
+    .list_book2 {
+        padding: 0 12px !important;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        /* li 之間距離 */
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    /* 統一三個 li 的基本風格 */
+    .list_book2 li {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    .list_book2 li:nth-child(1) {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .list_book2 li:nth-child(2),
+    .list_book2 li:nth-child(3) {
+        width: calc(50% - 6px) !important;
+        /* 扣 gap */
+    }
+    .list_book2 li img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+        border-radius: 6px;
+    }
+    .list_book2 li:first-child img {
+        max-width: 50% !important;
+        margin: 10px auto 0;
+        display: block;
+    }
+    .title img {
+        margin-top: 0;
+    }
+    .gift-title {
+        width: 90%;
+        font-size: 16px;
+    }
+    .gift-title h2 {
+        font-size: 16px;
+        font-weight: 200;
+    }
+    #book_out {
+        margin-bottom: 0;
+    }
+    .m-small {
+        width: 60% !important;
+        display: block;
+        margin: 0 auto;
+    }
+    .map-col {
+        margin-bottom: 0;
+    }
 }
