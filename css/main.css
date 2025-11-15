@@ -3111,7 +3111,7 @@ footer .footer-right .copyright {
     }
     .list_menu {
         justify-content: center;
-        margin-top: 2rem;
+        margin-top: 20px;
     }
     .list_menu>li {
         margin: 0.3rem;
@@ -3903,5 +3903,13 @@ header
     }
     .map-col {
         margin-bottom: 0;
+    }
+    .sp-title img {
+        width: 85%;
+    }
+    .buynow {
+        width: 160px;
+        margin: 0 auto;
+        line-height: 10px !important;
     }
 }
