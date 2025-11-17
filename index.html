@@ -7,7 +7,7 @@
             opacity: 0;
             transition: opacity 0.4s ease;
         }
-        
+
         img[loading="lazy"].loaded {
             opacity: 1;
         }
@@ -43,56 +43,47 @@
                     <a href="https://www.kadokawa.com.tw" target="_self"><img loading="lazy" src="images/k_header_w@2x.png" /></a>
                 </div>
                 <div class="header_right">
-                    <a id="photo">人氣作品合影牆</a> | <a id="gift">限定贈品四重送</a> |
-                    <a id="sale">首賣新書</a> | <a id="sale">會場限定抽卡機</a> |
-                    <a id="new">首賣新品</a> | <a id="new">超感謝特別回饋企劃</a> |
-                    <a id="location_in">活動資訊</a>
+                    <a id="photo">人氣作品合影牆</a> | <a id="gift">限定贈品四重送</a> | <a id="Card">會場限定抽卡機</a> |
+                    <a id="new">首賣新品</a> | <a id="Anime">動漫精品</a> |<a id="Special">超感謝特別回饋企劃</a> |
+                    <a id="Location">活動資訊</a>
                 </div>
             </div>
         </div>
         <!--header -->
-        <!-- m_header -->
+        <!-- Mobile Hamburger Button -->
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-        <div id="m_header">
-            <div class="m_header">
-                <div class="m_header_logo">
-                    <a href="https://www.kadokawa.com.tw" target="_self"><img loading="lazy" src="images/k_header_w@2x.png" class="retina" /></a>
-                </div>
+        <!-- Mobile Fullscreen Menu -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-box">
+                <div class="close-mobile-menu">✕</div>
+                <a class="m-item" id="photo">經典合照區</a>
+                <a class="m-item" id="gift">限定贈品四重送</a>
+                <a class="m-item" id="Card">會場限定抽卡機</a>
+                <a class="m-item" id="new">首賣新品</a>
+                <a class="m-item" id="Anime">動漫精品</a>
+                <a class="m-item" id="Special">超感謝特別回饋企劃</a>
+                <a class="m-item" id="Location">活動資訊</a>
+                <a class="m-item" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'})">回首頁</a>
             </div>
         </div>
-        <!--header -->
-        <!-- 手機版menu-->
 
-        <!-- <div class="fat-nav">
-                <div class="fat-nav__wrapper">
-                    <ul>
-                        <li><a id="photo-m">人氣作品合影牆</a></li>
-                        <li><a id="gift-m">限定贈品4重送</a></li>
-                        <li><a id="new_out-m">首賣新書</a></li>
-                        <li><a id="booktitle-m">首賣新商品</a></li>
-                        <li><a id="booktitle-m">會場限定抽卡機</a></li>
-                        <li><a id="booktitle-m">超感謝特別回饋企劃</a></li>
-                        <li><a id="location-m">活動資訊</a></li>
-                        <li><a href="#topheader">回頁首</a></li>
-                    </ul>
-                </div>
-            </div> -->
 
-        <!-- 手機版menu -->
 
         <div class="container">
             <div class="main">
                 <div class="kv-girl"></div>
                 <div class="kv-title"></div>
                 <div class="map-top"></div>
-                <!-- <img loading="lazy" src="images/star01.png" class="star star1 wow flash"   data-wow-duration="5s" data-wow-iteration="infinite">
-          <img loading="lazy" src="images/star01.png" class="star star2 wow flash"  data-wow-delay=".5s" data-wow-duration="5s" data-wow-iteration="infinite">
-          <img loading="lazy" src="images/star03.png" class="star star3 wow flash"  data-wow-delay="1s" data-wow-duration="5s" data-wow-iteration="infinite"> -->
                 <div class="map-img"></div>
             </div>
             <div id="main_out">
                 <div id="main_cont">
-                    <div class="title">
+                    <div class="title" id="photo">
                         <img loading="lazy" src="images/title02.png" />
                         <h4>4大超人氣作品紀念合影牆登場！</h4>
                     </div>
@@ -145,7 +136,7 @@
                         </div>
 
                         <!-- 超感謝！會場限定贈品4重送  有點開放大-->
-                        <div class="sp-title sp-title2">
+                        <div class="sp-title sp-title2" id="Special">
                             <img loading="lazy" src="images/title03-2.png" />
                             <h4>於會場消費即可獲得限定精美贈品</h4>
                         </div>
@@ -225,7 +216,7 @@
             <!-- section 2 -->
             <div id="books_cont">
                 <div class="container">
-                    <div class="title">
+                    <div class="title" id="new">
                         <h3>首賣特裝&限定版</h3>
                     </div>
                     <div class="list_book list_book4">
@@ -265,8 +256,7 @@
                 </div>
                 <div class="list_book list_book4">
                     <li>
-                        <!-- <img loading="lazy" src="images/book1-01.png" /> -->
-                        <img loading="lazy" src="images/temp-cover.png" />
+                        <img loading="lazy" src="images/book1-01.jpg" />
                         <div class="txt txth1">
                             Lycoris Recoil 莉可麗絲 Recollect (1)<br />定價：NT$140<br />漫畫：阿部かなり｜原作：Spider Lily
                         </div>
@@ -299,8 +289,7 @@
                         </div>
                     </li>
                     <li>
-                        <!-- <img loading="lazy" src="images/book1-06.png" /> -->
-                        <img loading="lazy" src="images/temp-cover.png" />
+                        <img loading="lazy" src="images/book1-06.jpg" />
                         <div class="txt txth1">
                             霜月同學對路人情有獨鍾～怕生的她只願意向我露出嬌嗔的一面～ (2)
                             <br />定價：NT$140<br />漫畫：きぐるみ｜原作：八神鏡｜角色原案：Roha
@@ -330,7 +319,7 @@
                         <!-- <img loading="lazy" src="images/book1-10.png" /> -->
                         <img loading="lazy" src="images/temp-cover.png" />
                         <div class="txt txth1">
-                            戀愛代理 (3))<br />定價：NT$140<br />漫畫：西沢5㍉｜原作：赤坂アカ
+                            戀愛代理 (3)<br />定價：NT$140<br />漫畫：西沢5㍉｜原作：赤坂アカ
                         </div>
                     </li>
                     <li>
@@ -380,7 +369,7 @@
             <!-- 首賣動漫精品 -->
             <div id="goods_out">
 
-                <div class="title">
+                <div class="title" id="Anime">
                     <div><img src="images/title03.png" /></div>
 
                 </div>
@@ -395,7 +384,7 @@
                 <!-- Tab Contents ------------------------------------------- -->
 
                 <!-- TAB A：我的老朋友們 -->
-                <div id="tab-a" class="goods-tab-content">
+                <div id="tab-a" class="goods-tab-content active">
                     <div class="title">
                         <h3>《我的老朋友們》</h3>
                     </div>
@@ -750,7 +739,7 @@
                     </div>
                 </div>
                 <!-- TAB D：全知讀者視角 -->
-                <div id="tab-d" class="goods-tab-content active">
+                <div id="tab-d" class="goods-tab-content">
                     <div class="title">
                         <h3>《全知讀者視角(漫畫)》</h3>
                     </div>
@@ -1107,7 +1096,7 @@
 
                             <!-- 30 -->
                             <li>
-                                <a href="images/goods/allreader-30.jpg"><img src="images/goods/allreader-30.jpg" /></a>
+                                <a href="images/goods/allreader-30.jpg"><img src="images/goods/allreader-d1.jpg" /></a>
                                 <div class="txt">
                                     <p>全知讀者視角(漫畫)炫彩胸章 A</p>
                                 </div>
@@ -1119,7 +1108,7 @@
 
                             <!-- 31 -->
                             <li>
-                                <a href="images/goods/allreader-31.jpg"><img src="images/goods/allreader-31.jpg" /></a>
+                                <a href="images/goods/allreader-31.jpg"><img src="images/goods/allreader-d2.jpg" /></a>
                                 <div class="txt">
                                     <p>全知讀者視角(漫畫)炫彩胸章 B</p>
                                 </div>
@@ -1351,8 +1340,8 @@
                 </div>
 
                 <div class="list_menu">
-                    <li><br><br>
-                        <a href="https://kadokawa.io/RRKdH" target="_blank">立即購買</a>
+                    <li><br>
+                        <a href="https://kadokawa.io/RRKdH" target="_blank" class="buynow">立即購買</a>
                     </li>
                 </div>
 
@@ -1365,19 +1354,18 @@
     </div>
 
     <!--section 4  會場限定抽卡機-->
-    <div class="sp-title">
+    <div class="sp-title" id="Card">
         <img loading="lazy" src="images/title04.png">
     </div>
     <div class="gift-title">
-        <h2 style="font-size: 17px; font-weight: bold;">3種不同型式的特別卡機！不同質感，不同感覺，不同的超感謝！
-        </h2>
+        3種不同型式的特別卡機！<br class="visible-xs">不同質感，不同感覺，不同的超感謝！
     </div>
     <div class="list_book list_book2">
         <li>
             <a href="images/draw-a.png"><img loading="lazy" src="images/draw-a.png"></a><br>
             <div class="txt">
                 <h4 class="card-h4">金屬感抽卡機</h4>
-                <p>《DATE A LIVE 約會大作戰》<br><br> 1抽1張100元</p>
+                <p>《DATE A LIVE 約會大作戰》<br><br> 1抽1張100元<br class="visible-xs" /></p>
             </div>
         </li>
         <li>
@@ -1388,7 +1376,7 @@
             </div>
             <div class="txt">
                 <h4 class="card-h4">銀箔抽卡機</h4>
-                <p>《全知讀者視角》、《約會大作戰DATE A BULLET 赤黑新章》、《誰殺了勇者》<br>1抽2張150元
+                <p>《全知讀者視角》、《約會大作戰DATE A BULLET 赤黑新章》、《誰殺了勇者》<br><br class="visible-xs" />1抽2張150元
                 </p>
             </div>
         </li>
@@ -1400,7 +1388,7 @@
             </div>
             <div class="txt">
                 <h4 class="card-h4">硬卡抽卡機</h4>
-                <p>《背叛者的情歌》、《渣男椎名學長與瘋男佐佐木學弟》
+                <p>《背叛者的情歌》、《渣男椎名學長與瘋男佐佐木學弟》<br class="visible-xs"><br class="visible-xs">
                     <br>1抽1張100元
                 </p>
             </div>
@@ -1408,7 +1396,7 @@
     </div>
     <!--section 5  超感謝！特選套書-->
     <div id="main_cont" style="margin-top: 40px;">
-        <div class="title">
+        <div class="title" id="Special">
             <img loading="lazy" src="images/title05.png" />
             <table class="rwd-table">
                 <thead>
@@ -1497,8 +1485,8 @@
         </div>
     </div>
     <!-- event -->
-    <div class="location-out" id="location">
-        <div class="location" id="location_in">
+    <div class="location-out" id="Location">
+        <div class="location">
             <div class="location-in">
                 <div class="map-col">
                     <li>
@@ -1524,10 +1512,12 @@
         <div class="footer-left">
             <div class="copy-web">
                 <div class="copy-col">
-                    ©Anri Sakano 2022 ©Daisuke Aizawa 2022 ©Touzai 2022<br /> ©Asato Asato 2017,2019-2021 Illustration：Shirabii<br /> ©Bokuto Uno 2019 Illustration：Miyukiruria<br /> ©Ghost Mikawa 2024 Illustration: Hiten<br /> ©Hajime Kamoshida 2016,2022 Illustration：Keji Mizoguchi<br /> ©Isuna Hasekura 2021 Illustration：Jyuu Ayakura<br /> ©Joyo Nishi 2021 Illustration：Retake 2022/<br /> ©Jyuu Ayakura 2021 ©Isuna Hasekura 2021<br /> ©Koushi Tachibana, Tsunako 2011,2021,2023,2025<br /> ©Kurone Mishima, Natsume Akatsuki 2020<br /> ©Natsume Akatsuki, Kurone Mishima 2022<br /> ©Makiko Nagaoka, magako 2021<br /> ©Matsuri Isora, Nanna Fujimi 2021,2025<br /> ©Sunsunsun, Momoco 2022<br /> ©Momoco, Sunsunsun 2024
+                    ©Anri Sakano 2022<br />  ©Daisuke Aizawa 2022<br />  ©Touzai 2022<br /> ©Asato Asato 2017,2019-2021 Illustration：Shirabii<br /> ©Bokuto Uno 2019 Illustration：Miyukiruria<br /> ©Ghost Mikawa 2024 Illustration: Hiten<br /> ©Hajime Kamoshida 2016,2022 Illustration：Keji Mizoguchi<br /> ©Isuna Hasekura 2021 Illustration：Jyuu Ayakura<br /> ©Joyo Nishi 2021 Illustration：Retake 2022/<br /> ©Jyuu Ayakura 2021<br />  ©Isuna Hasekura 2021<br /> ©Koushi Tachibana, Tsunako 2011,2021,2023,2025<br /> ©Kurone Mishima, Natsume Akatsuki 2020<br /> ©Natsume Akatsuki, Kurone Mishima 2022<br /> ©Makiko Nagaoka, magako 2021<br /> ©Matsuri Isora, Nanna Fujimi 2021,2025
                 </div>
 
                 <div class="copy-col">
+                    ©Sunsunsun, Momoco 2022 <br />
+                    ©Momoco, Sunsunsun 2024<br />
                     ©Nagaru Tanigawa, Noizi Ito 2022<br /> ©Nana Nanana 2021 Illustration：Parum<br /> ©Reki Kawahara 2022 Illustration：abec<br /> ©Rifujin na Magonote 2020 Illustration：Shirotaka<br /> ©Rui Tsukiyo, Reia 2020<br /> ©Shu 2018 Illustration：SHIZUMAYOSHINORI<br /> ©Syougo Kinugasa 2018,2019,2022 Illustration：Tomoseshunsaku<br /> ©Tomoki Izumi 2021<br /> ©Usa Haneda, U35 2024<br /> ©Yashichiro Takahashi 2023 Illustration:Noizi Ito<br /> ©Yuu Hidaka,Tantan 2021<br /> ©Yuzi Keino, Tantan 2022<br /> KADOKAWA CORPORATION<br /> © Sleepy-C(3B2S STUDIO), UMI, singNsong / REDICE STUDIO
                 </div>
               </div>
@@ -1575,6 +1565,10 @@
       </footer>
     </div>
     <!-- Lightbox -->
+     <!-- Back to Top Button -->
+<div id="backToTop">
+    <img src="images/up.png" alt="Back to top">
+</div>
 <div id="lightbox" class="lightbox">
     <span class="lightbox-close">×</span>
                             <img id="lightbox-img" src="" alt="">
@@ -1604,6 +1598,20 @@
                                 items: 1
                             },
                         },
+                    });
+                    // Back to top button
+                    $(window).scroll(function() {
+                        if ($(this).scrollTop() > 300) {
+                            $('#backToTop').addClass('show');
+                        } else {
+                            $('#backToTop').removeClass('show');
+                        }
+                    });
+
+                    $('#backToTop').click(function() {
+                        $('html, body').animate({
+                            scrollTop: 0
+                        }, 600);
                     });
                 </script>
 
@@ -1682,7 +1690,32 @@
 
                     });
                 </script>
+                <script>
+const mobileBtn = document.querySelector(".mobile-menu-btn");
+const mobileMenu = document.querySelector(".mobile-menu-overlay");
+const closeBtn = document.querySelector(".close-mobile-menu");
 
+if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+        mobileBtn.classList.add("open");
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
+            mobileBtn.classList.remove("open");
+        });
+    }
+
+    document.querySelectorAll(".mobile-menu-box .m-item").forEach(item => {
+        item.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
+            mobileBtn.classList.remove("open");
+        });
+    });
+}
+                </script>
 
 </body>
 
