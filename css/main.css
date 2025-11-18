@@ -126,6 +126,10 @@
                             }
                             
                             @media (max-width: 768px) {
+                                body {
+                                    background-size: 100%;
+                                    background-repeat: repeat;
+                                }
                                 .kv-inner {
                                     min-height: 660px;
                                 }
@@ -153,7 +157,7 @@
                             
                             @media (max-width: 540px) {
                                 .kv-inner {
-                                    min-height: 360px;
+                                    min-height: 400px;
                                 }
                                 .kv-girl {
                                     left: -29%;
@@ -162,7 +166,7 @@
                                     max-width: none;
                                 }
                                 .kv-title {
-                                    top: 13%;
+                                    top: 15%;
                                     left: 65%;
                                     transform: translateX(-50%);
                                     width: 74%;
@@ -171,7 +175,7 @@
                                 .kv-map {
                                     left: 65%;
                                     transform: translateX(-50%);
-                                    bottom: 5px;
+                                    bottom: 15px;
                                     width: 30%;
                                     max-width: none;
                                 }
@@ -473,6 +477,10 @@
                             .lightbox-content img {
                                 max-width: 100%;
                                 margin-bottom: 10px;
+                            }
+                            
+                            #photo-section .lightbox-content img {
+                                max-width: 800px;
                             }
                             
                             .lightbox-close {
@@ -1012,7 +1020,7 @@
                             
                             .copy-wrapper {
                                 display: flex;
-                                gap: 40px;
+                                gap: 30px;
                             }
                             
                             .copy-col {
