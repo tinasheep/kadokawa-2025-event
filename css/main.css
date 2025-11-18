@@ -1413,6 +1413,12 @@
                             /* 手機強制 2 欄（覆蓋所有 tab 的所有規則） */
                             
                             @media (max-width: 768px) {
+                                #anime-section {
+                                    padding: 5px;
+                                }
+                                #anime-section .sp-title {
+                                    margin: 0px 0 10px;
+                                }
                                 .list_book.list_goods .txt p {
                                     flex: 1;
                                     margin-top: 0.6rem;
@@ -1529,6 +1535,12 @@
                                 align-items: center;
                                 justify-content: space-between;
                                 padding: 10px 20px;
+                            }
+                            
+                            @media (max-width: 768px) {
+                                .header-inner {
+                                    max-width: 80%;
+                                }
                             }
                             /* Logo */
                             
