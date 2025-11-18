@@ -13,7 +13,6 @@
                                     background-attachment: fixed;
                                     background-color: #6bc4da;
                                     width: 100vw;
-                                    overflow-x: hidden;
                                 }
                                 
                                 @media (max-width: 540px) {
@@ -196,6 +195,9 @@
                                         transform: translateX(-50%);
                                         width: 74%;
                                         max-width: none;
+                                    }
+                                    .kv-map {
+                                        bottom: 25px;
                                     }
                                 }
                                 /* ===========================
@@ -387,48 +389,6 @@
                                     padding: 0.1rem 0.4rem;
                                     font-size: 0.75rem;
                                     line-height: 1rem;
-                                }
-                                /* ===========================
-   FOOTER
-=========================== */
-                                
-                                .site-footer {
-                                    background: #111;
-                                    color: #ccc;
-                                    padding: 20px 15px;
-                                }
-                                
-                                .footer-inner {
-                                    margin: 0 auto;
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    gap: 15px;
-                                    align-items: flex-start;
-                                    width: 100%;
-                                    max-width: 1200px;
-                                    margin: 0 auto;
-                                    text-align: center;
-                                }
-                                
-                                .footer-col {
-                                    flex: 1 1 260px;
-                                    font-size: 12px;
-                                    line-height: 1.6;
-                                }
-                                
-                                .footer-scroll {
-                                    overflow-x: auto;
-                                }
-                                
-                                .footer-scroll-inner {
-                                    display: inline-flex;
-                                    gap: 24px;
-                                    white-space: nowrap;
-                                }
-                                
-                                .footer-scroll-inner span {
-                                    border-right: 1px solid #444;
-                                    padding-right: 18px;
                                 }
                                 /* ============================
       BACK TO TOP
@@ -1009,104 +969,6 @@
                                         font-size: 15px;
                                     }
                                 }
-                                /* ============================
-      FOOTER
-============================ */
-                                
-                                #footer {
-                                    width: 100%;
-                                    background: #111;
-                                    padding: 20px 0;
-                                    color: rgba(255, 255, 255, 0.7);
-                                    font-size: 12px;
-                                }
-                                
-                                .footer-inner {
-                                    width: 100%;
-                                    margin: 0 auto;
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: flex-end;
-                                    padding: 0 20px;
-                                }
-                                /* 左側 copy */
-                                
-                                .footer-copy {
-                                    overflow-x: auto;
-                                    padding-bottom: 10px;
-                                }
-                                
-                                .copy-wrapper {
-                                    display: flex;
-                                    gap: 30px;
-                                }
-                                
-                                .copy-col {
-                                    white-space: nowrap;
-                                    line-height: 1.6;
-                                    text-align: left;
-                                    color: #ffffff6e;
-                                }
-                                
-                                x .footer-right {
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: flex-end;
-                                    justify-content: top;
-                                    gap: 14px;
-                                }
-                                
-                                .footer-right .social {
-                                    display: flex;
-                                    gap: 14px;
-                                    margin-bottom: 20px;
-                                }
-                                
-                                .footer-right .social a {
-                                    width: 3rem;
-                                    height: 3rem;
-                                    border-radius: 3rem;
-                                    background-color: #86c4d9;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    transition: transform .2s;
-                                }
-                                
-                                .footer-right .social a:hover {
-                                    transform: scale(1.1);
-                                }
-                                
-                                .footer-right .social img {
-                                    width: 1.5rem;
-                                    height: 1.5rem;
-                                }
-                                
-                                .footer-right .copyright {
-                                    width: 100%;
-                                    text-align: right;
-                                    line-height: 1.6;
-                                    color: rgba(255, 255, 255, 0.75);
-                                }
-                                /* 手機版 */
-                                
-                                @media (max-width: 768px) {
-                                    .footer-inner {
-                                        flex-direction: column;
-                                        align-items: center;
-                                        gap: 20px;
-                                    }
-                                    .copy-wrapper {
-                                        flex-direction: column;
-                                        gap: 20px;
-                                    }
-                                    .footer-right {
-                                        align-items: center;
-                                    }
-                                    .footer-right .copyright {
-                                        text-align: center;
-                                    }
-                                }
                                 /* 超感謝特別回饋企劃 */
                                 
                                 #special-section {
@@ -1655,5 +1517,117 @@
                                     }
                                     .logo img {
                                         height: 34px;
+                                    }
+                                }
+                                /* ============================
+      FOOTER（新版）
+============================ */
+                                
+                                #footer {
+                                    width: 100%;
+                                    background: #111;
+                                    padding: 20px 0;
+                                    color: rgba(255, 255, 255, 0.7);
+                                    font-size: 12px;
+                                }
+                                
+                                .footer-inner {
+                                    width: 100%;
+                                    max-width: 1200px;
+                                    margin: 0 auto;
+                                    padding: 0 16px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    gap: 20px;
+                                }
+                                /* 左側兩欄：可滑動 */
+                                
+                                .footer-copy {
+                                    overflow-x: auto;
+                                    padding-bottom: 6px;
+                                    flex: 1;
+                                }
+                                
+                                .copy-scroll {
+                                    display: inline-flex;
+                                    /* 讓兩欄變水平！ */
+                                    gap: 30px;
+                                    white-space: nowrap;
+                                    /* 防止換行 */
+                                }
+                                
+                                .copy-col {
+                                    text-align: left;
+                                    color: #ffffff6e;
+                                    line-height: 1.6;
+                                }
+                                /* 右側 */
+                                
+                                .footer-right {
+                                    flex-shrink: 0;
+                                    text-align: right;
+                                }
+                                
+                                .footer-right .social {
+                                    display: flex;
+                                    justify-content: center;
+                                    gap: 14px;
+                                    margin-bottom: 12px;
+                                }
+                                
+                                .footer-right .social a {
+                                    width: 3rem;
+                                    height: 3rem;
+                                    border-radius: 3rem;
+                                    background-color: #86c4d9;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: transform .2s;
+                                }
+                                
+                                .footer-right .social a:hover {
+                                    transform: scale(1.1);
+                                }
+                                
+                                .footer-right .social img {
+                                    width: 1.4rem;
+                                    height: 1.4rem;
+                                }
+                                /* 手機版：copy-col 滑動 + footer-right 置中 */
+                                
+                                @media (max-width: 768px) {
+                                    .footer-inner {
+                                        flex-direction: column;
+                                        align-items: center;
+                                        text-align: center;
+                                    }
+                                    .copy-scroll {
+                                        gap: 40px;
+                                    }
+                                    .copy-col {
+                                        white-space: normal;
+                                        width: 70vw;
+                                    }
+                                    .footer-right {
+                                        text-align: center;
+                                    }
+                                    .footer-copy {
+                                        overflow-x: auto;
+                                        width: 100%;
+                                    }
+                                    .copy-scroll {
+                                        display: inline-flex;
+                                        gap: 30px;
+                                        white-space: nowrap;
+                                    }
+                                    .copy-col {
+                                        white-space: nowrap;
+                                        width: auto;
+                                    }
+                                    .footer-right {
+                                        text-align: center;
+                                        width: 100%;
+                                        margin-top: 20px;
                                     }
                                 }
