@@ -12,17 +12,92 @@
                                 background-size: cover;
                                 background-attachment: fixed;
                                 background-color: #6bc4da;
-                            }
-                            
-                            @media (max-width: 540px) {
-                                body {
-                                    width: 100vw !important;
-                                    overflow-x: hidden !important;
-                                }
+                                width: 100vw;
+                                overflow-x: hidden;
                             }
                             
                             h2 {
                                 font-size: 1.2rem;
+                            }
+                            /* ===========================
+   HEADER
+=========================== */
+                            
+                            #header {
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                background: #fff;
+                                z-index: 1000;
+                                border-bottom: 1px solid #eee;
+                            }
+                            
+                            .header-inner {
+                                max-width: 1200px;
+                                margin: 0 auto;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                padding: 10px 15px;
+                            }
+                            
+                            .logo img {
+                                height: 26px;
+                            }
+                            
+                            .nav-desktop {
+                                display: flex;
+                                gap: 14px;
+                                font-size: 14px;
+                            }
+                            
+                            .nav-desktop a {
+                                cursor: pointer;
+                                color: #333;
+                                text-decoration: none;
+                                padding-bottom: 2px;
+                            }
+                            
+                            .nav-desktop a:hover {
+                                color: #0a6bff;
+                            }
+                            /* ===========================
+   MOBILE HAMBURGER
+=========================== */
+                            
+                            .mobile-menu-toggle {
+                                position: absolute;
+                                left: 14px;
+                                top: 14px;
+                                width: 28px;
+                                height: 22px;
+                                background: none;
+                                border: none;
+                                display: none;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                cursor: pointer;
+                            }
+                            
+                            .mobile-menu-toggle span {
+                                height: 3px;
+                                background: #333;
+                                border-radius: 2px;
+                                transition: 0.3s;
+                            }
+                            
+                            .mobile-menu-toggle.active span:nth-child(1) {
+                                transform: translateY(9px) rotate(45deg);
+                            }
+                            
+                            .mobile-menu-toggle.active span:nth-child(2) {
+                                opacity: 0;
+                            }
+                            
+                            .mobile-menu-toggle.active span:nth-child(3) {
+                                transform: translateY(-9px) rotate(-45deg);
                             }
                             /* ===========================
    MOBILE DRAWER
@@ -744,6 +819,19 @@
                                     margin: 10px auto;
                                 }
                             }
+                            /* ===========================
+   RWD
+=========================== */
+                            /* header RWD */
+                            
+                            @media(max-width:768px) {
+                                .nav-desktop {
+                                    display: none;
+                                }
+                                .mobile-menu-toggle {
+                                    display: flex;
+                                }
+                            }
                             
                             @media (max-width:1200px) {
                                 .list_book.list_goods>li {
@@ -1012,9 +1100,10 @@
                                 white-space: nowrap;
                                 line-height: 1.6;
                                 text-align: left;
+                                color: #ffffff6e;
                             }
                             
-                            .footer-right {
+                            x .footer-right {
                                 display: flex;
                                 flex-direction: column;
                                 align-items: flex-end;
@@ -1498,233 +1587,4 @@
                             .mini-prev:hover,
                             .mini-next:hover {
                                 background: rgba(255, 255, 255, 0.9);
-                            }
-                            /* ===========================
-   FOOTER（手機版兩欄滑動）
-=========================== */
-                            
-                            #footer {
-                                background: #111;
-                                color: rgba(255, 255, 255, 0.75);
-                                padding: 20px 0 20px;
-                                font-size: 13px;
-                            }
-                            
-                            .footer-inner {
-                                width: 100%;
-                                max-width: 1200px;
-                                margin: 0 auto;
-                            }
-                            
-                            .footer-copy {
-                                overflow-x: auto;
-                                padding: 10px 0 20px;
-                            }
-                            
-                            .copy-wrapper {
-                                display: flex;
-                                gap: 30px;
-                                min-width: 120%;
-                                /* 讓兩欄可滑 */
-                            }
-                            
-                            .copy-col {
-                                min-width: 50%;
-                                /* 每欄佔一半 */
-                                line-height: 1.6;
-                                color: #ffffff79;
-                                white-space: normal;
-                                padding-bottom: 10px;
-                            }
-                            
-                            .footer-bottom {
-                                text-align: center;
-                                padding-top: 10px;
-                            }
-                            
-                            .footer-bottom .social {
-                                display: flex;
-                                justify-content: center;
-                                gap: 22px;
-                                margin-bottom: 16px;
-                            }
-                            
-                            .footer-bottom .social img {
-                                width: 46px;
-                                height: 46px;
-                                border-radius: 50%;
-                            }
-                            
-                            .footer-bottom .copyright {
-                                font-size: 14px;
-                                line-height: 1.7;
-                            }
-                            /* 桌機兩欄固定並排 */
-                            
-                            @media (max-width: 768px) {
-                                .footer-copy {
-                                    overflow-x: auto;
-                                    padding: 0 10px;
-                                }
-                                .copy-wrapper {
-                                    display: flex;
-                                    flex-direction: row;
-                                    gap: 20px;
-                                    min-width: 120%;
-                                }
-                                .copy-col {
-                                    flex: 0 0 50%;
-                                    min-width: 70%;
-                                    white-space: normal;
-                                    line-height: 1.6;
-                                }
-                                #footer * {
-                                    white-space: normal !important;
-                                }
-                                .footer-bottom {
-                                    text-align: center;
-                                    /* padding-top: 25px; */
-                                }
-                                .footer-bottom .social {
-                                    display: flex;
-                                    justify-content: center;
-                                    gap: 22px;
-                                    margin-bottom: 18px;
-                                }
-                                .footer-bottom .copyright {
-                                    text-align: center;
-                                    line-height: 1.7;
-                                }
-                                .footer-bottom .social img {
-                                    width: 1.5rem;
-                                    height: 1.5rem;
-                                }
-                                .footer-bottom .social a {
-                                    width: 3rem;
-                                    height: 3rem;
-                                    display: -webkit-box;
-                                    display: -ms-flexbox;
-                                    display: flex;
-                                    -webkit-box-orient: horizontal;
-                                    -webkit-box-direction: normal;
-                                    -ms-flex-direction: row;
-                                    flex-direction: row;
-                                    -webkit-box-pack: center;
-                                    -ms-flex-pack: center;
-                                    justify-content: center;
-                                    -webkit-box-align: center;
-                                    -ms-flex-align: center;
-                                    align-items: center;
-                                    border-radius: 3rem;
-                                    background-color: #86c4d9;
-                                    -webkit-transition: -webkit-transform .2s;
-                                    transition: -webkit-transform .2s;
-                                    transition: transform .2s;
-                                    transition: transform .2s, -webkit-transform .2s;
-                                }
-                            }
-                            /* menu */
-                            /* ===========================
-   HEADER
-=========================== */
-                            
-                            #header {
-                                position: fixed;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                background: #fff;
-                                z-index: 1000;
-                                border-bottom: 1px solid #eee;
-                            }
-                            
-                            .header-inner {
-                                max-width: 1400px;
-                                margin: 0 auto;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                                padding: 10px 20px;
-                            }
-                            /* Logo */
-                            
-                            .logo img {
-                                height: 38px;
-                            }
-                            /* ====== Web Menu ====== */
-                            
-                            .menu-desktop {
-                                flex: 1;
-                                display: flex;
-                                justify-content: flex-end;
-                            }
-                            
-                            .menu-right {
-                                display: flex;
-                                gap: 14px;
-                                align-items: center;
-                            }
-                            
-                            .menu-right li {
-                                list-style: none;
-                                position: relative;
-                                font-size: 16px;
-                                padding-right: 16px;
-                            }
-                            
-                            .menu-right li:not(:last-child)::after {
-                                content: "|";
-                                position: absolute;
-                                right: 0;
-                                top: 0;
-                                color: #888;
-                            }
-                            
-                            .menu-right a {
-                                color: #333;
-                                text-decoration: none;
-                                transition: 0.25s;
-                            }
-                            
-                            .menu-right a:hover {
-                                color: #c63465;
-                            }
-                            /* ===========================
-   MOBILE
-=========================== */
-                            
-                            .mobile-menu-toggle {
-                                position: absolute;
-                                left: 16px;
-                                top: 18px;
-                                width: 28px;
-                                height: 22px;
-                                display: none;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                background: none;
-                                border: none;
-                                cursor: pointer;
-                            }
-                            
-                            .mobile-menu-toggle span {
-                                height: 3px;
-                                background: #333;
-                                border-radius: 3px;
-                                transition: .3s;
-                            }
-                            
-                            @media (max-width: 768px) {
-                                .menu-desktop {
-                                    display: none;
-                                }
-                                .mobile-menu-toggle {
-                                    display: flex;
-                                }
-                                .header-inner {
-                                    justify-content: center;
-                                }
-                                .logo img {
-                                    height: 34px;
-                                }
                             }
