@@ -75,7 +75,6 @@
                                 width: 100%;
                                 position: relative;
                                 overflow: hidden;
-                                background: url(images/bg-star.jpg);
                                 background-size: cover;
                                 background-position: center;
                             }
@@ -1339,7 +1338,6 @@
                                 font-size: 20px;
                                 margin-bottom: 20px;
                             }
-                            /* 商品列表排版（全域基礎） */
                             
                             .list_book.list_goods {
                                 display: flex;
@@ -1415,6 +1413,8 @@
                             @media (max-width: 768px) {
                                 #anime-section {
                                     padding: 5px;
+                                    background-attachment: scroll;
+                                    background-size: contain;
                                 }
                                 #anime-section .sp-title {
                                     margin: 0px 0 10px;
