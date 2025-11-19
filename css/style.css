@@ -1638,3 +1638,7 @@
                                         line-height: 1.4;
                                     }
                                 }
+                                
+                                #lightbox-img {
+                                    max-width: 640px;
+                                }
