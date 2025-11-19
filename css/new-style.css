@@ -165,7 +165,7 @@
                                     }
                                     .kv-girl {
                                         left: -30%;
-                                        top: 90px;
+                                        top: 95px;
                                         width: 80%;
                                         max-width: none;
                                     }
@@ -1431,12 +1431,6 @@
                                     justify-content: space-between;
                                     padding: 10px 20px;
                                 }
-                                
-                                @media (max-width: 768px) {
-                                    .header-inner {
-                                        max-width: 80%;
-                                    }
-                                }
                                 /* Logo */
                                 
                                 .logo img {
@@ -1514,9 +1508,16 @@
                                     }
                                     .header-inner {
                                         justify-content: center;
+                                        padding: 5px;
                                     }
                                     .logo img {
-                                        height: 34px;
+                                        height: 40px;
+                                    }
+                                }
+                                
+                                @media (max-width: 540px) {
+                                    .logo img {
+                                        margin-top: 0;
                                     }
                                 }
                                 /* ============================
@@ -1571,7 +1572,7 @@
                                 .footer-right .social {
                                     display: flex;
                                     justify-content: center;
-                                    gap: 14px;
+                                    gap: 24px;
                                     margin-bottom: 12px;
                                 }
                                 
@@ -1641,4 +1642,10 @@
                                 
                                 #lightbox-img {
                                     max-width: 640px;
+                                }
+                                
+                                @media (max-width: 540px) {
+                                    #lightbox-img {
+                                        max-width: 90vw;
+                                    }
                                 }
