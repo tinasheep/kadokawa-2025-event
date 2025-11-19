@@ -1,0 +1,1640 @@
+                                * {
+                                    margin: 0;
+                                    padding: 0;
+                                    box-sizing: border-box;
+                                }
+                                
+                                body {
+                                    font-family: Arial, "Microsoft JhengHei", sans-serif;
+                                    color: #333;
+                                    background-image: url(../images/sky-bg.png);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-attachment: fixed;
+                                    background-color: #6bc4da;
+                                    width: 100vw;
+                                }
+                                
+                                @media (max-width: 540px) {
+                                    body {
+                                        background-image: url(../images/sky-bg-s.jpg);
+                                        background-size: cover;
+                                    }
+                                }
+                                
+                                h2 {
+                                    font-size: 1.2rem;
+                                }
+                                /*  MOBILE DRAWER */
+                                
+                                .mobile-drawer {
+                                    position: fixed;
+                                    top: 0;
+                                    left: -70%;
+                                    width: 70%;
+                                    height: 100%;
+                                    background: #222;
+                                    color: #fff;
+                                    transition: 0.35s;
+                                    z-index: 1100;
+                                    padding-top: 20px;
+                                }
+                                
+                                .mobile-drawer.open {
+                                    left: 0;
+                                }
+                                
+                                .drawer-inner {
+                                    padding-bottom: 30px;
+                                }
+                                
+                                .drawer-close {
+                                    background: none;
+                                    border: none;
+                                    color: #fff;
+                                    font-size: 36px;
+                                    margin-left: 10px;
+                                    margin-bottom: 20px;
+                                    cursor: pointer;
+                                }
+                                
+                                .drawer-inner .m-item {
+                                    display: block;
+                                    font-size: 18px;
+                                    padding: 15px 20px;
+                                    border-bottom: 1px solid #444;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    color: #fff;
+                                }
+                                
+                                .drawer-inner .m-item:hover {
+                                    background: #333;
+                                }
+                                /* ============================
+      KV SECTION（桌機）
+============================ */
+                                
+                                #kv-section {
+                                    width: 100%;
+                                    position: relative;
+                                    overflow: hidden;
+                                    background-size: cover;
+                                    background-position: center;
+                                }
+                                
+                                .kv-inner {
+                                    width: 100%;
+                                    max-width: 1200px;
+                                    margin: 0 auto;
+                                    position: relative;
+                                    min-height: 720px;
+                                }
+                                
+                                .kv-girl {
+                                    position: absolute;
+                                    left: -10%;
+                                    bottom: -20px;
+                                    width: 60%;
+                                    max-width: 800px;
+                                    height: auto;
+                                    z-index: 3;
+                                }
+                                
+                                .kv-title {
+                                    position: absolute;
+                                    left: 68%;
+                                    top: 6%;
+                                    transform: translateX(-50%);
+                                    width: 58%;
+                                    max-width: 720px;
+                                    height: auto;
+                                    z-index: 2;
+                                }
+                                
+                                .kv-map {
+                                    position: absolute;
+                                    left: 68%;
+                                    transform: translateX(-50%);
+                                    bottom: 2%;
+                                    width: 24%;
+                                    max-width: 220px;
+                                    height: auto;
+                                    z-index: 2;
+                                }
+                                
+                                @media (max-width: 1024px) {
+                                    .kv-title {
+                                        top: 12%;
+                                    }
+                                }
+                                
+                                @media (max-width: 768px) {
+                                    body {
+                                        background-size: 100%;
+                                        background-repeat: repeat;
+                                    }
+                                    .kv-inner {
+                                        min-height: 660px;
+                                    }
+                                    .kv-girl {
+                                        left: -34%;
+                                        top: 100px;
+                                        width: 80%;
+                                        max-width: none;
+                                    }
+                                    .kv-title {
+                                        top: 8%;
+                                        left: 64%;
+                                        transform: translateX(-50%);
+                                        width: 75%;
+                                        max-width: none;
+                                    }
+                                    .kv-map {
+                                        left: 63%;
+                                        transform: translateX(-50%);
+                                        bottom: 20px;
+                                        width: 30%;
+                                        max-width: none;
+                                    }
+                                }
+                                
+                                @media (max-width: 540px) {
+                                    .kv-inner {
+                                        min-height: 400px;
+                                    }
+                                    .kv-girl {
+                                        left: -29%;
+                                        top: 80px;
+                                        width: 80%;
+                                        max-width: none;
+                                    }
+                                    .kv-title {
+                                        top: 15%;
+                                        left: 65%;
+                                        transform: translateX(-50%);
+                                        width: 74%;
+                                        max-width: none;
+                                    }
+                                    .kv-map {
+                                        left: 65%;
+                                        transform: translateX(-50%);
+                                        bottom: 15px;
+                                        width: 30%;
+                                        max-width: none;
+                                    }
+                                }
+                                
+                                @media (max-width: 390px) {
+                                    .kv-inner {
+                                        min-height: 380px;
+                                    }
+                                    .kv-title {
+                                        top: 18%;
+                                        left: 65%;
+                                        transform: translateX(-50%);
+                                        width: 74%;
+                                        max-width: none;
+                                    }
+                                    .kv-map {
+                                        bottom: 25px;
+                                    }
+                                }
+                                /* ===========================
+   SECTIONS
+=========================== */
+                                
+                                .section-block {
+                                    display: block;
+                                    margin: 0 auto 20px;
+                                }
+                                
+                                .section-block:nth-of-type(even) {
+                                    /* background: rgb(255, 255, 255, 0.8); */
+                                }
+                                
+                                .section-inner {
+                                    max-width: 1200px;
+                                    margin: 0 auto;
+                                }
+                                
+                                .white-block {
+                                    background: rgb(255, 255, 255, 0.8);
+                                    border-radius: 30px;
+                                    padding: 40px 120px 40px;
+                                }
+                                
+                                @media (max-width: 992px) {
+                                    .white-block {
+                                        padding: 10px 20px;
+                                    }
+                                }
+                                
+                                .purple-block {
+                                    background: rgb(241 201 255 / 77%);
+                                }
+                                
+                                .section-inner h2 {
+                                    font-size: 24px;
+                                    margin-bottom: 16px;
+                                    color: #0a367a;
+                                }
+                                
+                                .section-inner p {
+                                    font-size: 15px;
+                                    line-height: 1.7;
+                                }
+                                /* ============================
+   BOOK OUT (優惠)
+============================ */
+                                
+                                .book-out {
+                                    width: 100%;
+                                    max-width: 600px;
+                                    margin: 40px auto 60px;
+                                    padding: 10px 20px 20px;
+                                    text-align: center;
+                                    background: #fbfecb;
+                                    box-shadow: 5px 5px 12px #95ddef;
+                                    border-radius: 20px;
+                                }
+                                
+                                .sale {
+                                    margin-top: 15px;
+                                    font-size: 18px;
+                                    color: #333;
+                                    line-height: 1.7;
+                                }
+                                
+                                .sale .im {
+                                    font-size: 26px;
+                                    font-weight: bold;
+                                    color: #d94f8c;
+                                }
+                                
+                                @media (max-width: 768px) {
+                                    .book-out {
+                                        margin: 20px auto 25px;
+                                        padding: 2px 15px 10px;
+                                    }
+                                    .sale {
+                                        font-size: 16px;
+                                    }
+                                    .sale .im {
+                                        font-size: 22px;
+                                    }
+                                }
+                                /* ===========================
+   TABS（界面 A）
+=========================== */
+                                
+                                .goods-tabs {
+                                    width: 100%;
+                                    margin: 30px auto 0;
+                                }
+                                
+                                .goods-tabs .tab-buttons {
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-wrap: wrap;
+                                    gap: 12px;
+                                    margin-bottom: 25px;
+                                }
+                                
+                                .goods-tabs .tab-buttons button {
+                                    background: none;
+                                    border: none;
+                                    padding: 10px 20px;
+                                    font-size: 15px;
+                                    cursor: pointer;
+                                    color: #0a367a;
+                                    border-bottom: 2px solid transparent;
+                                    transition: 0.25s;
+                                }
+                                
+                                .goods-tabs .tab-buttons button.active {
+                                    color: #0a6bff;
+                                    border-bottom: 2px solid #0a6bff;
+                                    font-weight: bold;
+                                }
+                                /* Panel 顯示控制 */
+                                
+                                .tab-panel {
+                                    display: none;
+                                }
+                                
+                                .tab-panel.active {
+                                    display: block;
+                                }
+                                /* ===========================
+   商品卡片（list_goods）
+=========================== */
+                                
+                                .list_book.list_goods {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: flex-start;
+                                    gap: 1rem;
+                                    padding: 0 1rem 2rem;
+                                    list-style: none;
+                                }
+                                /* 單一卡片 */
+                                
+                                .list_book.list_goods>li {
+                                    width: calc(100% / 7 - (6 * 1rem / 7));
+                                    /* 桌機 7 欄 */
+                                    background: rgba(255, 255, 255, 0.92);
+                                    border-radius: 0.5rem;
+                                    border: 2px solid #ffffff;
+                                    padding: 0.8rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    box-sizing: border-box;
+                                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+                                }
+                                
+                                .list_book.list_goods>li a {
+                                    display: block;
+                                    width: 100%;
+                                }
+                                
+                                .list_book.list_goods>li img {
+                                    width: 100%;
+                                    max-height: 230px;
+                                    object-fit: contain;
+                                    display: block;
+                                }
+                                
+                                .list_book.list_goods .txt {
+                                    flex: 1;
+                                    margin-top: 0.6rem;
+                                    font-size: 0.9rem;
+                                    line-height: 1.4;
+                                    color: #0a367a;
+                                    text-align: left;
+                                }
+                                /* 價格 */
+                                
+                                .list_book.list_goods .price {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.5rem;
+                                    margin-top: 0.4rem;
+                                }
+                                
+                                .list_book.list_goods .price .btn {
+                                    border-radius: 0.2rem;
+                                    border: solid 1px #5497e2;
+                                    color: #5497e2;
+                                    padding: 0.1rem 0.4rem;
+                                    font-size: 0.75rem;
+                                    line-height: 1rem;
+                                }
+                                /* ============================
+      BACK TO TOP
+============================ */
+                                
+                                #backToTop {
+                                    position: fixed;
+                                    right: 20px;
+                                    bottom: 20px;
+                                    width: 55px;
+                                    height: 55px;
+                                    cursor: pointer;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: opacity .3s ease, visibility .3s ease;
+                                    z-index: 999;
+                                }
+                                
+                                #backToTop img {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                }
+                                
+                                #backToTop.show {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                                
+                                @media (max-width: 768px) {
+                                    #backToTop {
+                                        right: -10px;
+                                    }
+                                    #backToTop img {
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                }
+                                /* ===========================
+   LIGHTBOX
+=========================== */
+                                
+                                .lightbox {
+                                    position: fixed;
+                                    inset: 0;
+                                    display: none;
+                                    background: rgba(0, 0, 0, 0.85);
+                                    z-index: 2000;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                
+                                .lightbox.show {
+                                    display: flex;
+                                }
+                                
+                                .lightbox-content {
+                                    text-align: center;
+                                    color: #fff;
+                                    max-width: 90%;
+                                    position: relative;
+                                }
+                                
+                                .lightbox-content img {
+                                    max-width: 100%;
+                                    margin-bottom: 10px;
+                                }
+                                
+                                #photo-section .lightbox-content img {
+                                    max-width: 800px;
+                                }
+                                
+                                .lightbox-close {
+                                    position: absolute;
+                                    top: -10px;
+                                    right: -10px;
+                                    font-size: 22px;
+                                    background: #595959d1;
+                                    border: none;
+                                    border-radius: 50%;
+                                    width: 32px;
+                                    height: 32px;
+                                    color: #fff;
+                                    cursor: pointer;
+                                }
+                                /* ===========================
+   人氣作品合影牆（Photo Wall）
+=========================== */
+                                
+                                .photo-caption {
+                                    text-align: center;
+                                }
+                                
+                                .section-desc {
+                                    font-size: 18px !important;
+                                    color: rgb(35, 17, 74);
+                                    margin-bottom: 18px;
+                                    text-align: center;
+                                    font-weight: bold;
+                                }
+                                /* 合影牆外層 */
+                                
+                                .photo-wall {
+                                    display: grid;
+                                    grid-template-columns: repeat(2, 1fr);
+                                    gap: 16px;
+                                }
+                                
+                                .photo-card {
+                                    /* background: #fff; */
+                                    border-radius: 8px;
+                                    padding: 8px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    height: 100%;
+                                }
+                                
+                                .photo-card a {
+                                    display: block;
+                                    width: 100%;
+                                }
+                                
+                                .photo-card img {
+                                    display: block;
+                                    width: 100%;
+                                    height: auto;
+                                    object-fit: cover;
+                                    border-radius: 6px;
+                                    margin-bottom: 5px;
+                                    transition: transform .2s ease, box-shadow .2s ease;
+                                }
+                                
+                                .photo-card:hover img {
+                                    transform: translateY(-2px);
+                                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+                                }
+                                
+                                #photo-section .sp-title {
+                                    text-align: center;
+                                    margin: 2rem 0 1rem;
+                                }
+                                
+                                .sp-title {
+                                    text-align: center;
+                                    margin: 2rem 0 1rem;
+                                }
+                                
+                                .sp-title img {
+                                    max-width: 400px;
+                                    width: 100%;
+                                    margin: 2rem 0 1rem;
+                                }
+                                
+                                @media (max-width: 768px) {
+                                    .sp-title img {
+                                        margin: 10px 0 5px
+                                    }
+                                }
+                                
+                                #photo-section .sp-title img {
+                                    max-width: 400px;
+                                    width: 100%;
+                                }
+                                
+                                #photo-section .sp-title h4 {
+                                    font-size: 1rem;
+                                    margin-top: .5rem;
+                                    color: #444;
+                                }
+                                /* ========= RWD for Photo Wall ========= */
+                                /* 768 以下 → 2 欄 */
+                                
+                                @media (max-width: 768px) {
+                                    .photo-wall {
+                                        grid-template-columns: repeat(2, 1fr);
+                                        gap: 12px;
+                                    }
+                                    .photo-card {
+                                        padding: 6px;
+                                    }
+                                    .sp-title {
+                                        text-align: center;
+                                        margin: 20px 0 10px;
+                                    }
+                                    #photo-section .sp-title {
+                                        text-align: center;
+                                        margin: 20px 0 10px;
+                                    }
+                                }
+                                /* ================================
+   限定贈品四重送 Section 乾淨版
+================================ */
+                                /* 區塊外框 */
+                                
+                                #gift-section .section-inner {
+                                    max-width: 1200px;
+                                    margin: 0 auto;
+                                }
+                                
+                                #gift-section .sp-title {
+                                    text-align: center;
+                                    margin: 2rem 0 1rem;
+                                }
+                                
+                                #gift-section .sp-title img {
+                                    max-width: 400px;
+                                    width: 100%;
+                                }
+                                
+                                #gift-section .sp-title h4 {
+                                    font-size: 1rem;
+                                    margin-top: .5rem;
+                                    color: #444;
+                                }
+                                /* =============================
+   限定贈品四重送 → 1 / 3 佈局
+============================= */
+                                
+                                li {
+                                    list-style: none;
+                                }
+                                
+                                .gift-s3 {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: space-between;
+                                    margin-top: 2rem;
+                                }
+                                
+                                .gift-s3 li:nth-child(1) {
+                                    width: 100%;
+                                    margin-bottom: 2rem;
+                                }
+                                
+                                .gift-s3 li:nth-child(n+2) {
+                                    width: 32%;
+                                    box-sizing: border-box;
+                                    margin-bottom: 40px;
+                                    padding: 1rem;
+                                }
+                                
+                                .gift-s3 li img {
+                                    width: 60%;
+                                    margin: .8rem auto;
+                                    display: block;
+                                    border-radius: 6px;
+                                }
+                                
+                                .gift-s3 h1 {
+                                    font-size: 1.1rem;
+                                    font-weight: bold;
+                                    line-height: 1.4;
+                                    margin-bottom: .4rem;
+                                    color: #333;
+                                    text-align: center;
+                                }
+                                
+                                .gift-tag {
+                                    display: block;
+                                    font-size: 22px;
+                                    background-color: #9e80ca;
+                                    color: #fff;
+                                    padding: 4px 18px;
+                                    margin: 10px auto 15px;
+                                    border-radius: 20px;
+                                    width: 200px;
+                                    text-align: center;
+                                }
+                                
+                                .gift-info-box {
+                                    width: 60%;
+                                    margin: 20px auto;
+                                    padding: 20px 25px;
+                                    font-size: 16px;
+                                    line-height: 1.7;
+                                    color: #333;
+                                }
+                                
+                                .gift-sep {
+                                    border: none;
+                                    border-top: 1px solid #ccc;
+                                    margin: 20px 0;
+                                }
+                                
+                                .gift-title {
+                                    font-weight: bold;
+                                    font-size: 17px;
+                                    margin-bottom: 12px;
+                                }
+                                
+                                .gift-subtitle {
+                                    font-size: 18px;
+                                    color: #6b45a8;
+                                    font-weight: bold;
+                                    margin-bottom: 10px;
+                                }
+                                /* =============================
+   RWD — Tablet
+============================= */
+                                
+                                @media (max-width: 1024px) {
+                                    .gift-s3 li:nth-child(n+2) {
+                                        width: 33%;
+                                    }
+                                    .gift-info-box {
+                                        width: 80%;
+                                    }
+                                }
+                                /* =============================
+   RWD — Mobile
+============================= */
+                                
+                                @media (max-width: 540px) {
+                                    .gift-s3 li:nth-child(1) {
+                                        margin-bottom: 0;
+                                        padding: 5px;
+                                    }
+                                    .gift-s3 li:nth-child(n+2) {
+                                        margin-bottom: 0;
+                                        padding: 5px;
+                                    }
+                                    .gift-s3 li {
+                                        width: 100% !important;
+                                        margin-bottom: 1.8rem;
+                                    }
+                                    .gift-s3 li img {
+                                        width: 80%;
+                                    }
+                                    .gift-info-box {
+                                        width: 100%;
+                                        padding: 0px;
+                                        margin: 10px auto;
+                                    }
+                                }
+                                /* ===========================
+   RWD
+=========================== */
+                                /* header RWD */
+                                
+                                @media(max-width:768px) {
+                                    .nav-desktop {
+                                        display: none;
+                                    }
+                                    .mobile-menu-toggle {
+                                        display: flex;
+                                    }
+                                }
+                                
+                                @media (max-width:1200px) {
+                                    .list_book.list_goods>li {
+                                        width: calc(100% / 5 - (4 * 1rem / 5));
+                                    }
+                                }
+                                
+                                @media (max-width:992px) {
+                                    .list_book.list_goods>li {
+                                        width: calc(100% / 3 - (2 * 1rem / 3));
+                                    }
+                                }
+                                
+                                @media (max-width:768px) {
+                                    .section-block {
+                                        padding: 0px 16px 20px;
+                                    }
+                                    .list_book.list_goods {
+                                        gap: 0.75rem;
+                                        padding: 0 0.5rem 1.5rem;
+                                    }
+                                    .list_book.list_goods>li {
+                                        width: calc(50% - 0.75rem);
+                                        padding: 0.7rem;
+                                    }
+                                }
+                                
+                                @media (max-width:480px) {
+                                    .list_book.list_goods>li {
+                                        width: 100%;
+                                    }
+                                }
+                                /* ============================================
+   首賣新品（New Section）
+   book-grid + book-card
+============================================ */
+                                
+                                .section-title {
+                                    text-align: center;
+                                }
+                                
+                                .book-grid {
+                                    width: 90%;
+                                    display: grid;
+                                    grid-template-columns: repeat(4, 1fr);
+                                    gap: 20px;
+                                    list-style: none;
+                                    margin: 20px auto 40px;
+                                }
+                                
+                                .book-card {
+                                    background: rgba(255, 255, 255, 0.6);
+                                    /* border: 1px solid #e8e8e8; */
+                                    /* border-radius: 8px; */
+                                    padding: 14px;
+                                    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); */
+                                    text-align: left;
+                                }
+                                
+                                .book-card a {
+                                    display: block;
+                                    width: 100%;
+                                }
+                                
+                                .book-card img {
+                                    width: 70%;
+                                    height: auto;
+                                    object-fit: contain;
+                                    margin-bottom: 12px;
+                                    display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                }
+                                
+                                .book-card h4 {
+                                    font-size: 15px;
+                                    line-height: 1.4;
+                                    color: #0a367a;
+                                    margin-bottom: 6px;
+                                }
+                                
+                                .book-card p {
+                                    font-size: 14px;
+                                    color: #333;
+                                    line-height: 1.6;
+                                }
+                                
+                                #new-section {
+                                    width: 100%;
+                                    position: relative;
+                                    margin: 0 auto 20px;
+                                    overflow: hidden;
+                                    background: #f5f56bdb;
+                                    z-index: 1;
+                                    padding: 20px 160px;
+                                }
+                                
+                                @media (max-width: 992px) {
+                                    #new-section {
+                                        padding: 20px;
+                                    }
+                                }
+                                
+                                #new-section .sub-section {
+                                    text-align: center;
+                                }
+                                
+                                #new-section .section-title {
+                                    text-align: center;
+                                    font-size: 22px;
+                                    font-weight: 400;
+                                    margin: 10px auto 0;
+                                    padding: 5px 6px;
+                                    border-bottom: 2px solid #000;
+                                    display: inline-block;
+                                }
+                                
+                                .book-grid.three {
+                                    grid-template-columns: repeat(3, 1fr) !important;
+                                    justify-items: center;
+                                }
+                                /* ============================================
+   RWD — 平板
+============================================ */
+                                
+                                @media (max-width: 992px) {
+                                    .book-grid {
+                                        grid-template-columns: repeat(3, 1fr);
+                                    }
+                                }
+                                /* ============================================
+   RWD — 手機
+============================================ */
+                                
+                                @media (max-width: 768px) {
+                                    .book-grid {
+                                        grid-template-columns: repeat(2, 1fr);
+                                        gap: 16px;
+                                    }
+                                    .book-grid.three {
+                                        grid-template-columns: repeat(2, 1fr);
+                                    }
+                                }
+                                
+                                @media (max-width: 480px) {
+                                    .book-grid {
+                                        width: 100%;
+                                        grid-template-columns: repeat(2, 1fr);
+                                        gap: 16px;
+                                    }
+                                    .book-grid.three {
+                                        grid-template-columns: repeat(2, 1fr) !important;
+                                    }
+                                }
+                                /* ============================
+      活動資訊（Location）
+============================ */
+                                
+                                #location-section {
+                                    width: 100%;
+                                    position: relative;
+                                    margin: 0 auto 0px;
+                                    overflow: hidden;
+                                    background: rgb(255 249 214 / 87%);
+                                    z-index: 1;
+                                    padding: 20px;
+                                }
+                                
+                                .location-wrapper {
+                                    width: 80%;
+                                    margin: 0 auto;
+                                    display: flex;
+                                    align-items: flex-start;
+                                    justify-content: space-between;
+                                    gap: 30px;
+                                    margin-top: 20px;
+                                }
+                                
+                                .location-map iframe {
+                                    width: 376px;
+                                    height: 276px;
+                                    border: 2px solid #e5e4e7;
+                                }
+                                
+                                .location-info h3 {
+                                    font-size: 22px;
+                                    font-weight: bold;
+                                    color: #ff9104;
+                                    text-align: center;
+                                    padding: 20px 0;
+                                }
+                                
+                                .location-info .time {
+                                    font-size: 18px;
+                                    line-height: 1.8;
+                                    text-align: center;
+                                    color: #0f0f10bf;
+                                    margin-bottom: 12px;
+                                }
+                                
+                                .location-info .small {
+                                    font-size: 14px;
+                                    line-height: 1.8;
+                                    color: #0f0f10bf;
+                                }
+                                /* RWD：平板 */
+                                
+                                @media (max-width: 992px) {
+                                    .location-wrapper {
+                                        flex-direction: column;
+                                        align-items: center;
+                                    }
+                                    .location-map iframe {
+                                        width: 300px;
+                                        height: 240px;
+                                    }
+                                }
+                                /* RWD：手機 */
+                                
+                                @media (max-width: 540px) {
+                                    .location-info h3 {
+                                        text-align: center;
+                                        padding: 10px 0;
+                                    }
+                                    .location-info .time,
+                                    .location-info .small {
+                                        text-align: center;
+                                    }
+                                    .location-info .time {
+                                        font-size: 15px;
+                                    }
+                                }
+                                /* 超感謝特別回饋企劃 */
+                                
+                                #special-section {
+                                    margin: 40px auto;
+                                }
+                                
+                                #special-section .section-title {
+                                    text-align: center;
+                                    margin-bottom: 20px;
+                                }
+                                
+                                #special-section .section-title img {
+                                    max-width: 480px;
+                                    width: 100%;
+                                }
+                                /* 表格 */
+                                
+                                .special-table {
+                                    width: 70%;
+                                    border-collapse: collapse;
+                                    font-size: 14px;
+                                    background: #fffce6;
+                                    margin: 0 auto 30px;
+                                }
+                                
+                                .special-table th,
+                                .special-table td {
+                                    padding: 12px 10px;
+                                    border-bottom: 1px solid #e3d6f0;
+                                }
+                                
+                                .special-table th {
+                                    background: #e4c0f5;
+                                    color: #333;
+                                    white-space: nowrap;
+                                }
+                                
+                                .special-table tr:nth-child(even) {
+                                    background: #fffde9;
+                                }
+                                
+                                .special-boxes {
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-wrap: nowrap;
+                                    gap: 40px;
+                                }
+                                
+                                .special-box {
+                                    width: 50%;
+                                    text-align: center;
+                                    background: #fff9d6;
+                                    border-radius: 10px;
+                                    padding-bottom: 10px;
+                                }
+                                
+                                .special-title {
+                                    width: 90%;
+                                    display: block;
+                                    margin: 2px auto;
+                                }
+                                
+                                .special-img {
+                                    width: 180px;
+                                    display: block;
+                                    margin: 12px auto;
+                                }
+                                
+                                .special-text {
+                                    font-size: 14px;
+                                    margin-top: 12px;
+                                }
+                                /* 手機 RWD */
+                                
+                                @media (max-width: 768px) {
+                                    #special-section {
+                                        margin: 20px auto;
+                                    }
+                                    .special-table {
+                                        width: 100%;
+                                    }
+                                    .special-boxes {
+                                        flex-wrap: wrap;
+                                        gap: 10px;
+                                    }
+                                    .special-box {
+                                        width: 100%;
+                                    }
+                                    .special-img {
+                                        width: 150px;
+                                    }
+                                }
+                                /* 會場限定抽卡機 */
+                                
+                                .card-section .section-title {
+                                    text-align: center;
+                                    margin-bottom: 30px;
+                                }
+                                
+                                .card-list {
+                                    display: flex;
+                                    justify-content: center;
+                                    gap: 40px;
+                                    flex-wrap: nowrap;
+                                }
+                                
+                                .card-box {
+                                    width: 33%;
+                                    text-align: center;
+                                    padding: .5rem;
+                                    margin: .2rem;
+                                    background-color: #fffbdc;
+                                    border-radius: .5rem;
+                                    box-shadow: 5px 5px 6px #3cafd2;
+                                }
+                                
+                                .card-box>img {
+                                    width: 90%;
+                                    display: block;
+                                    margin: 0 auto 12px;
+                                }
+                                
+                                .card-slider img {
+                                    width: 90%;
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                                
+                                .owl-carousel .owl-stage {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                
+                                .owl-carousel .owl-item img {
+                                    width: 90%;
+                                    margin: 0 auto;
+                                }
+                                
+                                .card-name {
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    margin: 10px 0 6px;
+                                }
+                                
+                                .card-info {
+                                    font-size: 15px;
+                                    line-height: 1.6;
+                                    color: #333;
+                                }
+                                
+                                .visible-xs {
+                                    display: none;
+                                }
+                                
+                                @media (max-width: 768px) {
+                                    .card-list {
+                                        flex-wrap: wrap;
+                                        gap: 30px;
+                                    }
+                                    .card-box {
+                                        width: 80%;
+                                    }
+                                    .visible-xs {
+                                        display: block;
+                                    }
+                                }
+                                
+                                .card-slider {
+                                    position: relative;
+                                    width: 90%;
+                                    margin: 0 auto 12px;
+                                    overflow: hidden;
+                                }
+                                
+                                .card-slider-track {
+                                    display: flex;
+                                    width: 100%;
+                                    transition: transform .45s ease;
+                                }
+                                
+                                .card-slider-track img {
+                                    width: 100%;
+                                    flex-shrink: 0;
+                                }
+                                /* ============================
+   SECTION：動漫精品（含 TAB）
+============================ */
+                                
+                                #anime-section {
+                                    width: 100%;
+                                    position: relative;
+                                    overflow: hidden;
+                                    padding: 0px 0 60px;
+                                    background: url(../images/goods_out_bg.png) center center no-repeat;
+                                    background-size: cover;
+                                    background-attachment: fixed;
+                                    margin-top: -20px;
+                                }
+                                
+                                @media (max-width: 540px) {
+                                    #anime-section {
+                                        background-image: url(../images/goods_out_bg-s.jpg);
+                                        background-size: cover;
+                                    }
+                                }
+                                /* Title */
+                                
+                                #anime-section .title img {
+                                    display: block;
+                                    margin: 0 auto 20px;
+                                }
+                                /* TAB buttons */
+                                
+                                .goods-tab {
+                                    display: flex;
+                                    justify-content: center;
+                                    gap: 12px;
+                                    flex-wrap: wrap;
+                                    margin-bottom: 25px;
+                                    padding-left: 0;
+                                }
+                                
+                                .goods-tab li {
+                                    list-style: none;
+                                    padding: .6rem 1.2rem;
+                                    background: #5497e282;
+                                    color: #fff;
+                                    border-radius: 999rem;
+                                    cursor: pointer;
+                                    transition: .25s;
+                                    font-size: 1rem;
+                                }
+                                
+                                .goods-tab li.active {
+                                    background: #2e69e9;
+                                    color: #fff;
+                                }
+                                /* TAB contents */
+                                
+                                .goods-tab-content {
+                                    display: none;
+                                }
+                                
+                                .goods-tab-content.active {
+                                    display: block;
+                                    animation: fadeIn .3s ease;
+                                }
+                                
+                                @keyframes fadeIn {
+                                    from {
+                                        opacity: 0;
+                                    }
+                                    to {
+                                        opacity: 1;
+                                    }
+                                }
+                                /* Goods title */
+                                
+                                .goods-title {
+                                    text-align: center;
+                                    color: #0a367a;
+                                    font-size: 20px;
+                                    margin-bottom: 20px;
+                                }
+                                
+                                .list_book.list_goods {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: flex-start;
+                                    gap: 1rem;
+                                    padding: 0 1rem 2rem;
+                                }
+                                
+                                .list_book.list_goods>li {
+                                    background: rgba(255, 255, 255, 0.92);
+                                    border-radius: 0.5rem;
+                                    border: 2px solid #ffffff;
+                                    padding: 0.8rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+                                    box-sizing: border-box;
+                                }
+                                
+                                .list_book.list_goods>li img {
+                                    width: 100%;
+                                    display: block;
+                                    max-height: 230px;
+                                    object-fit: contain;
+                                }
+                                /* 文字 */
+                                
+                                .list_book.list_goods .txt {
+                                    flex: 1;
+                                    margin-top: 0.6rem;
+                                    font-size: 0.9rem;
+                                    color: #0a367a;
+                                    line-height: 1.4;
+                                }
+                                /* 價格 */
+                                
+                                .list_book.list_goods .price {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.5rem;
+                                    margin-top: 0.4rem;
+                                }
+                                
+                                .list_book.list_goods .price .btn {
+                                    border-radius: 0.2rem;
+                                    border: solid 1px #5497e2;
+                                    color: #5497e2;
+                                    padding: 0.1rem 0.4rem;
+                                    font-size: 0.75rem;
+                                }
+                                
+                                #tab-a .list_book.list_goods>li,
+                                #tab-b .list_book.list_goods>li,
+                                #tab-c .list_book.list_goods>li {
+                                    width: calc(100% / 6 - (5 * 1rem / 6));
+                                }
+                                
+                                #tab-d .list_book.list_goods>li {
+                                    width: calc(100% / 7 - (6 * 1rem / 7));
+                                }
+                                
+                                @media (max-width: 992px) {
+                                    #tab-a .list_book.list_goods>li,
+                                    #tab-b .list_book.list_goods>li,
+                                    #tab-c .list_book.list_goods>li,
+                                    #tab-d .list_book.list_goods>li {
+                                        width: calc(100% / 3 - (2 * 1rem / 3));
+                                    }
+                                }
+                                /* 手機強制 2 欄（覆蓋所有 tab 的所有規則） */
+                                
+                                @media (max-width: 768px) {
+                                    #anime-section {
+                                        padding: 5px;
+                                        background-attachment: scroll;
+                                        background-size: contain;
+                                    }
+                                    #anime-section .sp-title {
+                                        margin: 0px 0 10px;
+                                    }
+                                    .list_book.list_goods .txt p {
+                                        flex: 1;
+                                        margin-top: 0.6rem;
+                                        font-size: 0.9rem;
+                                        color: #0a367a;
+                                        line-height: 1.4;
+                                    }
+                                    .list_book.list_goods>li {
+                                        padding: 5px;
+                                    }
+                                    .goods-tab li {
+                                        list-style: none;
+                                        padding: .6rem;
+                                        font-size: 14px;
+                                    }
+                                    .list_book.list_goods>li {
+                                        width: calc(100% / 2 - 0.5rem) !important;
+                                    }
+                                    #tab-d .list_book.list_goods>li {
+                                        width: calc(100% / 3 - (2 * 1rem / 3)) !important;
+                                    }
+                                }
+                                
+                                .list_book.list_goods .price .btn {
+                                    border-radius: 0.2rem;
+                                    padding: 0.1rem 0.2rem;
+                                    font-size: 0.6rem;
+                                    white-space: nowrap;
+                                }
+                                
+                                .list_menu a {
+                                    background: #ff3665;
+                                    color: #fff;
+                                    padding: 10px 30px;
+                                    border-radius: 30px;
+                                    display: block;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    margin: 0 auto;
+                                    width: 220px;
+                                    font-size: 18px;
+                                    transition: background 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+                                }
+                                
+                                .list_menu a:hover {
+                                    background: #2e69e9;
+                                }
+                                /* 小型商品輪播 — 修正版 */
+                                
+                                .mini-carousel {
+                                    position: relative;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    border-radius: 6px;
+                                }
+                                
+                                .mini-carousel-track {
+                                    display: flex;
+                                    transition: transform .45s ease;
+                                }
+                                
+                                .mini-carousel-track img {
+                                    flex: 0 0 100%;
+                                    width: 100%;
+                                    max-height: 230px;
+                                    object-fit: contain;
+                                    display: block;
+                                }
+                                /* 左右按鈕 */
+                                
+                                .mini-prev,
+                                .mini-next {
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    background: rgba(255, 255, 255, 0.7);
+                                    border: none;
+                                    padding: 4px 8px;
+                                    font-size: 14px;
+                                    border-radius: 4px;
+                                    cursor: pointer;
+                                }
+                                
+                                .mini-prev {
+                                    left: 4px;
+                                }
+                                
+                                .mini-next {
+                                    right: 4px;
+                                }
+                                
+                                .mini-prev:hover,
+                                .mini-next:hover {
+                                    background: rgba(255, 255, 255, 0.9);
+                                }
+                                /* ===========================
+   HEADER
+=========================== */
+                                
+                                #header {
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    background: #fff;
+                                    z-index: 1000;
+                                    border-bottom: 1px solid #eee;
+                                }
+                                
+                                .header-inner {
+                                    max-width: 1400px;
+                                    margin: 0 auto;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 10px 20px;
+                                }
+                                
+                                @media (max-width: 768px) {
+                                    .header-inner {
+                                        max-width: 80%;
+                                    }
+                                }
+                                /* Logo */
+                                
+                                .logo img {
+                                    height: 38px;
+                                }
+                                /* ====== Web Menu ====== */
+                                
+                                .menu-desktop {
+                                    flex: 1;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                }
+                                
+                                .menu-right {
+                                    display: flex;
+                                    gap: 14px;
+                                    align-items: center;
+                                }
+                                
+                                .menu-right li {
+                                    list-style: none;
+                                    position: relative;
+                                    font-size: 16px;
+                                    padding-right: 16px;
+                                }
+                                
+                                .menu-right li:not(:last-child)::after {
+                                    content: "|";
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                    color: #888;
+                                }
+                                
+                                .menu-right a {
+                                    color: #333;
+                                    text-decoration: none;
+                                    transition: 0.25s;
+                                }
+                                
+                                .menu-right a:hover {
+                                    color: rgb(46, 105, 233);
+                                }
+                                /* ===========================
+   MOBILE
+=========================== */
+                                
+                                .mobile-menu-toggle {
+                                    position: absolute;
+                                    left: 16px;
+                                    top: 18px;
+                                    width: 28px;
+                                    height: 22px;
+                                    display: none;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    background: none;
+                                    border: none;
+                                    cursor: pointer;
+                                }
+                                
+                                .mobile-menu-toggle span {
+                                    height: 3px;
+                                    background: #333;
+                                    border-radius: 3px;
+                                    transition: .3s;
+                                }
+                                
+                                @media (max-width: 768px) {
+                                    .menu-desktop {
+                                        display: none;
+                                    }
+                                    .mobile-menu-toggle {
+                                        display: flex;
+                                    }
+                                    .header-inner {
+                                        justify-content: center;
+                                    }
+                                    .logo img {
+                                        height: 34px;
+                                    }
+                                }
+                                /* ============================
+      FOOTER（新版）
+============================ */
+                                
+                                #footer {
+                                    width: 100%;
+                                    background: #111;
+                                    padding: 20px 0;
+                                    color: rgba(255, 255, 255, 0.7);
+                                    font-size: 12px;
+                                }
+                                
+                                .footer-inner {
+                                    width: 100%;
+                                    max-width: 1200px;
+                                    margin: 0 auto;
+                                    padding: 0 16px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    gap: 20px;
+                                }
+                                /* 左側兩欄：可滑動 */
+                                
+                                .footer-copy {
+                                    overflow-x: auto;
+                                    padding-bottom: 6px;
+                                    flex: 1;
+                                }
+                                
+                                .copy-scroll {
+                                    display: inline-flex;
+                                    /* 讓兩欄變水平！ */
+                                    gap: 30px;
+                                    white-space: nowrap;
+                                    /* 防止換行 */
+                                }
+                                
+                                .copy-col {
+                                    text-align: left;
+                                    color: #ffffff6e;
+                                    line-height: 1.6;
+                                }
+                                /* 右側 */
+                                
+                                .footer-right {
+                                    flex-shrink: 0;
+                                    text-align: right;
+                                }
+                                
+                                .footer-right .social {
+                                    display: flex;
+                                    justify-content: center;
+                                    gap: 14px;
+                                    margin-bottom: 12px;
+                                }
+                                
+                                .footer-right .social a {
+                                    width: 3rem;
+                                    height: 3rem;
+                                    border-radius: 3rem;
+                                    background-color: #86c4d9;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: transform .2s;
+                                }
+                                
+                                .footer-right .social a:hover {
+                                    transform: scale(1.1);
+                                }
+                                
+                                .footer-right .social img {
+                                    width: 1.4rem;
+                                    height: 1.4rem;
+                                }
+                                /* 手機版：copy-col 滑動 + footer-right 置中 */
+                                
+                                @media (max-width: 768px) {
+                                    .footer-inner {
+                                        flex-direction: column;
+                                        align-items: center;
+                                        text-align: center;
+                                    }
+                                    .copy-scroll {
+                                        gap: 40px;
+                                    }
+                                    .copy-col {
+                                        white-space: normal;
+                                        width: 70vw;
+                                    }
+                                    .footer-right {
+                                        text-align: center;
+                                    }
+                                    .footer-copy {
+                                        overflow-x: auto;
+                                        width: 100%;
+                                    }
+                                    .copy-scroll {
+                                        display: inline-flex;
+                                        gap: 30px;
+                                        white-space: nowrap;
+                                    }
+                                    .copy-col {
+                                        white-space: nowrap;
+                                        width: auto;
+                                    }
+                                    .footer-right {
+                                        text-align: center;
+                                        width: 100%;
+                                        margin-top: 20px;
+                                    }
+                                }
+                                
+                                @media (max-width: 540px) {
+                                    .copy-col {
+                                        font-size: 11px;
+                                        line-height: 1.4;
+                                    }
+                                }
