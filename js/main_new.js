@@ -132,3 +132,18 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
+
+document.querySelectorAll(".redpacket-track img").forEach(img => {
+    img.addEventListener("click", () => {
+        const lightbox = document.getElementById("lightbox");
+        const lbImg = document.getElementById("lightbox-img");
+        const lbCap = document.getElementById("lightbox-caption");
+
+        if (!lightbox || !lbImg) return;
+
+        lightbox.classList.add("show");
+        lbImg.src = img.src;
+        lbCap.textContent = "";
+        document.body.style.overflow = "hidden";
+    });
+});
