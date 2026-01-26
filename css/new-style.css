@@ -1809,6 +1809,10 @@ FOOTER（新版）
                     }
                 }
                 
+                #lightbox-img {
+                    max-height: 85vh;
+                }
+                
                 @media (max-width: 540px) {
                     #lightbox-img {
                         max-width: 90vw;
